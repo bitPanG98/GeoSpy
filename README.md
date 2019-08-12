@@ -69,19 +69,19 @@ Session recognition is one of GeoSpy most interesting attractions, since you as 
 How to use it
 -------
 
-## Install the GeoSpy
+* **INSTALLATION:**
 ```
 cd GeoSpy
 chmod +x install.sh
 ./install.sh
 ```
 
-Example of execution
+* **EXECUTION**
 ```
-Example: GeoSpy --url http://example.com --port 8080
+GeoSpy --url http://example.com --port 8080
 ```
 
-**HELP  AND OPTIONS**
+* **USAGE**
 ```
 usage: GeoSpy -u <> -p <> [-h] [-v] [-u URL] [-p PORT]
                                               [-ak ACCESSKEY] [-l LOCAL]
