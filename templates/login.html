@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GeoSpy: Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="apple-mobile-web-app-title" content="GeoSpy">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="theme-color" content="#000" />
+    <meta name="google" value="notranslate"/>
+    <meta name="author" content="Ivan Nikolsky, @entynetproject"/>
+    <meta name="description" content="OSINT Research and analytics tool"/>
+
+    <!-- Styles & Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/styles/[FAVICON_HREF]">
+    <link rel="icon" type="image/x-icon" href="/styles/[FAVICON_PNG_HREF]">
+    <link rel="stylesheet" href="/styles/[BASE_ICONS_HREF]">
+    <link rel="stylesheet" href="/styles/[STYLES_HREF]">
+    <script src="/static/js/[LIBS_SRC]"></script>
+    <!--[if (gte IE 6) & (lte IE 9)]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body class="GeoSpyBody-Login">
+    <!-- home(GeoSpyLogin) -->
+    <div class="GeoSpyLogin">
+
+        <header class="GeoSpyLogin-Header">
+            <div class="GeoSpyLogin-Header--Box">
+                <img class="GeoSpyLogin-Header--Box---logo" src="static/img/GeoSpy-logo.png" alt="GeoSpy">
+                    <div>
+                        <h1 class="GeoSpyLogin-Header--Box---nameGeoSpy">GeoSpy</h1>
+                    </div>
+            </div>
+        </header>
+
+        <section class="GeoSpyLogin-Wrapper">
+            <p class="GeoSpyLogin-Wrapper--description">Control panel</p>
+            <p class="GeoSpyLogin-Wrapper--explanation">People tracker on the Internet</p>
+
+            <!-- home(keyIcorrect) -->
+            <div class="GeoSpyLogin-IncorrectKey">
+                <div class="GeoSpyLogin-IncorrectKey--Icon"><span class="icon-times"></span></div>
+                <div class="GeoSpyLogin-IncorrectKey--Text">Hey the key is incorrect, try again.</div> 
+            </div>
+            <!-- end(keyIcorrect) -->
+
+            <!-- home(form) -->
+            <div class="GeoSpyLogin-Wrapper--Form">
+                <form class="GeoSpyLogin-Wrapper--Form---Body" method="POST">
+                    <label class="GeoSpyLogin-Wrapper--iconLabel icon-lock2"></label>
+                    <input type="password" class="GeoSpyLogin-Wrapper--Form---input" placeholder="Enter the Access key" id="dataKey" name="key" required="true">
+                    <div class="GeoSpyLogin-Wrapper--Form---buttonRightDefine">
+                        <button type="submit" class="GeoSpyLogin-Wrapper--Form---button"><span class="GeoSpyLogin-Wrapper--Form---button----text">Sign In</span> <small class="icon-chevron-right"></small></button>
+                    </div>
+                </form>
+                <div class="GeoSpyLogin-Wrapper--Form---text">
+                    <span class="GeoSpyLogin-Wrapper--Form---line">-</span>  OSINT Research and analytics tool <span class="GeoSpyLogin-Wrapper--Form---line">-</span>
+                </div>
+            </div>
+            <!-- end(form) -->
+
+
+            <!-- home(copyright) -->
+            <div class="GeoSpyLogin-Footer">
+                <div class="GeoSpyLogin-Footer--Version">
+                   <span class="GeoSpyLogin-Footer--Version---name">stable</span> 
+                   <span class="GeoSpyLogin-Footer--Version---number">v2.0</span> 
+                </div>
+                <div class="GeoSpyLogin-Footer--Copyright">
+                    <i class="icon-copyright"></i> 2018 <a href="https://twitter.com/entynetproject" class="GeoSpyLogin-Footer--Copyright---linkBoxug" title="Creator of GeoSpy tool">Ivan Nikolsky</a>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- end(GeoSpyLogin) -->
+    <script src="static/js/[LOGIN_SRC]"></script>
+</body>
+</html>
