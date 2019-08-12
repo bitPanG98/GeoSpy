@@ -142,21 +142,6 @@ This development and others, the participants will be mentioned with name, Twitt
 
   --- Ivan Nikolsky - [@entynetproject](https://twitter.com/entynetproject) - (**Security Researcher**) 
 
-
-Donations
--------
-This is a project made with a lot of motivation to collaborate in the computer security community, if you liked the features. I invite you to make a donation in the following directions.
-
-**BITCOIN:** 36RouFnp6wEf4qu8QzUDJGVKoZ2Ja1ZSyW
-
-
-**ETHEREUM:** 0x6b9c69F0126c8A817c3A7296b2af80EF2e8B2d65
-
-Happy hacking!
--------
-I invite you, if you use this tool helps to share, collaborate. Let's make the Internet a safer place, let's report.
-
-
 ## License
 
 The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
