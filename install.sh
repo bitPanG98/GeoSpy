@@ -20,6 +20,7 @@ cp bin/GeoSpy /usr/local/bin
 chmod +x /usr/local/bin/GeoSpy
 cp bin/GeoSpy /bin
 chmod +x /bin/GeoSpy
+python -m pip install -r requirements.txt
 } &> /dev/null
 else
 cd ~
@@ -30,5 +31,6 @@ cp bin/GeoSpy /usr/local/bin
 chmod +x /usr/local/bin/GeoSpy
 cp bin/GeoSpy /bin
 chmod +x /bin/GeoSpy
+python -m pip install -r requirements.txt
 } &> /dev/null
 fi
