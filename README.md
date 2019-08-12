@@ -68,26 +68,22 @@ Session recognition is one of GeoSpy most interesting attractions, since you as 
  
 How to use it
 -------
- First unload the tool.
+
+## Install the GeoSpy
 ```
-git clone https://github.com/entynetproject/GeoSpy.git
 cd GeoSpy
-python2 GeoSpy.py -h
-```
-If it does not work, try to install all the libraries that are located in the file **requirements.txt**
-```
-python2 -m pip install -r requirements.txt
+chmod +x install.sh
+./install.sh
 ```
 
 Example of execution
 ```
-Example: python2 GeoSpy.py --url http://example.com --port 8080
+Example: GeoSpy --url http://example.com --port 8080
 ```
 
 **HELP  AND OPTIONS**
 ```
-user:~$ python2 GeoSpy.py --help
-usage: python GeoSpy.py -u <> -p <> [-h] [-v] [-u URL] [-p PORT]
+usage: GeoSpy -u <> -p <> [-h] [-v] [-u URL] [-p PORT]
                                               [-ak ACCESSKEY] [-l LOCAL]
                                               [--update] [-n] [-ic INJC]
 
