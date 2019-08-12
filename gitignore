@@ -1,0 +1,12 @@
+*.nlog
+*.pyc
+*.db
+*.zip
+ngrok*
+static/files/*
+build/*
+dist/*
+main.spec
+GeoSpy.config
+*.nlog
+*.DS_Store
