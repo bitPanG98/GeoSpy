@@ -72,7 +72,7 @@ class GeoSpy(object):
 			if self.googl == '':
 				self.googl = 'AIzaSyDHMDTOGo9L1OBl5vRxOVM6vpXOXVp5jCc'
 			
-			parser = argparse.ArgumentParser("python GeoSpy.py -u <<Url>> -p <<Port>>", version=self.version)
+			parser = argparse.ArgumentParser("geospy -u <<Url>> -p <<Port>>", version=self.version)
 			parser.add_argument('-u', '--url', dest='url', help='Put the web page url to clone.')
 			parser.add_argument('-p', '--port', dest='port', help='Insert your port.')
 			parser.add_argument('-ak', '--accesskey', dest='accesskey', help='Insert your custom key access.')
@@ -259,14 +259,14 @@ class GeoSpy(object):
 		utils.Go("------")
 		utils.Go("In the next section you must enter your Ngrok token, if you do not have \none register at (" + utils.Color['blueBold'] + "https://ngrok.com" + utils.Color['white'] + "), this data is necessary for the generation of public network tunnels.")
 		utils.Go("")
-		c_nGrokToken = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter your ngrok token" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
+		c_nGrokToken = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Ngrok Token API" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
 		utils.Go("")
 		utils.Go(utils.Color['whiteBold'] + "GOOGLE API" + utils.Color['white'])
 		utils.Go("------")
 		utils.Go("You must register with the " + utils.Color['blueBold'] + "Google Console" + utils.Color['white'] + ", and get an API for maps and another for shortening. \nBy having these data you complete the settings")
 		utils.Go("")
-		c_gMapsToken = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " What is your Google Maps Api Key?" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
-		c_gOoglToken = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter your Goo.gl (shortener) Api Key (leave it empty if you don't have)" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
+		c_gMapsToken = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Google Maps API" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
+		c_gOoglToken = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Goo.gl (shortener) API" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
 		utils.Go("")
 		utils.Go(utils.Color['greenBold'] + "-" + utils.Color['white'] + " Congratulations! " + utils.Color['greenBold'] + "Successful configuration" + utils.Color['white'] + ", now enjoy GeoSpy!" + utils.Color['white'])
 		utils.Go("")
