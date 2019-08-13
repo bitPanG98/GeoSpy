@@ -1,6 +1,6 @@
 
 
-GeoSpy (BETA) v2.0
+GeoSpy (stable) v2.0
 ========
 
 People tracker on the Internet: Learn to track the world, to avoid being traced.
