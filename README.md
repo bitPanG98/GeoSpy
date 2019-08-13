@@ -14,7 +14,7 @@ Some benefits
 -----------
 * **LOCATOR OPTIMIZATION** Trace the path between you and the target you're tracking. Each time you make a move, the path will be updated, the location of the target is obtained silently through a bypass made in the browsers, allowing you to skip the location request on the victim's side, and at the same time maintain a precision of **99%** in the locator.
 
-* **APPROACH:** When you're close to the target, GeoSpy will tell you.
+* **APPROACH** When you're close to the target, GeoSpy will tell you.
 
 * **REST API** Generates an API (random or custom), and through this you can control and monitor other Web sites on the Internet remotely, getting the traffic of all visitors.
 
@@ -85,23 +85,23 @@ optional arguments:
                         Update GeoSpy to the latest version.
 ```
 
-**url**  In this option you add the URL you want to clone, which works as a decoy.
+   **--url**  In this option you add the URL you want to clone, which works as a decoy.
 
-**port**  Here you insert the port, where you are going to run the  **GeoSpy server**.
+   **--port**  Here you insert the port, where you are going to run the  **GeoSpy server**.
 
-**accesskey**  You enter a custom key for the  **GeoSpy panel**, if you do not insert it will generate an  **automatic key**.
+   **--accesskey**  You enter a custom key for the  **GeoSpy panel**, if you do not insert it will generate an  **automatic key**.
 
-**injectcode**  GeoSpy contains a  **REST API**  to play anywhere, using this option you can customize the name of the file to include, if it does not, generates a random name allusive to a token.
+   **--injectcode**  GeoSpy contains a  **REST API**  to play anywhere, using this option you can customize the name of the file to include, if it does not, generates a random name allusive to a token.
 
-**local**  Using this option you can call a local **HTML file**, this is the replacement of the  **--url**  option made to run a local lure in GeoSpy.
+   **--local**  Using this option you can call a local **HTML file**, this is the replacement of the  **--url**  option made to run a local lure in GeoSpy.
 
-**ngrok**  In this option you can enter a token, to run at the time of a process. This would replace the token saved in configurations.
+   **--ngrok**  In this option you can enter a token, to run at the time of a process. This would replace the token saved in configurations.
 
-**version**  You can see the version number of GeoSpy.
+   **--version**  You can see the version number of GeoSpy.
 
-**update**  Option used to upgrade to the latest version of **GeoSpy**.
+   **--update**  Option used to upgrade to the latest version of **GeoSpy**.
 
-**help**  It is used to see all the above options, from the executable.
+   **--help**  It is used to see all the above options, from the executable.
 
 ***
 
