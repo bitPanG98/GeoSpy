@@ -84,17 +84,17 @@ usage: geospy -u <> -p <> [-h] [-v] [-u URL] [-p PORT]
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         show program's version number and exit
-  -u URL, --url URL     Put the web page url to clone
-  -p PORT, --port PORT  Insert your port
+  -u URL, --url URL     Put the web page url to clone.
+  -p PORT, --port PORT  Insert your port.
   -ak ACCESSKEY, --accesskey ACCESSKEY
-                        Insert your custom key access
+                        Insert your custom key access.
   -l LOCAL, --local LOCAL
-                        Insert your home file
-  -n, --ngrok           Insert your ngrok Authtoken
+                        Insert your home file.
+  -n, --ngrok           Insert your ngrok Authtoken.
   -ic INJC, --injectcode INJC
-                        Insert your custom REST API path
+                        Insert your custom REST API path.
   -ud UPDATE, --update UPDATE
-                        Update GeoSpy to the latest version
+                        Update GeoSpy to the latest version.
 ```
 
 **--url**  In this option you add the URL you want to clone, which works as a decoy.
@@ -119,7 +119,6 @@ optional arguments:
 Disclaimer
 -------
 This tool has been published educational purposes. It is intended to teach people how bad guys could track them, monitor them or obtain information from their credentials, we are not responsible for the use or the scope that someone may have through this project.
-
 We are totally convinced that if we teach how vulnerable things really are, we can make the Internet a safer place.
 
 -------------
