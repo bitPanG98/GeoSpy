@@ -110,6 +110,4 @@ Disclaimer
 This tool has been published educational purposes. It is intended to teach people how bad guys could track them, monitor them or obtain information from their credentials, we are not responsible for the use or the scope that someone may have through this project.
 We are totally convinced that if we teach how vulnerable things really are, we can make the Internet a safer place.
 
-GeoSpy has not been added to the Entynet Pentester Kit (EPK), has not been added to the Epath Packager (epkg) and has not been added to the Ehtools Framework Arsenal (Ehtools Tools Menu) in order to avoid bad consequences and complaints against us, this tool is quite dangerous and will be independent in comparison with the others.
-
 ***
