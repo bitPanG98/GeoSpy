@@ -8,6 +8,8 @@ People tracker on the Internet: Learn to track the world, to avoid being traced.
 ---
 GeoSpy is an **OSINT** analysis and research tool, which allows people to track and execute intelligent **social engineering** attacks in real time. It was created with the aim of teaching the world how large Internet companies could obtain **confidential information** such as the status of sessions of their websites or services and control their users through their browser, without their knowlege, but It evolves with the aim of helping **government** organizations, companies and **researchers** to track the cybercriminals.
 
+***
+
 Some benefits
 -----------
 * **LOCATOR OPTIMIZATION** Trace the path between you and the target you're tracking. Each time you make a move, the path will be updated, the location of the target is obtained silently through a bypass made in the browsers, allowing you to skip the location request on the victim's side, and at the same time maintain a precision of **99%** in the locator.
@@ -36,11 +38,15 @@ Some benefits
 
 * **PROFILE** Brief summary of the target's behavior and important additional information about your device.
 
+***
+
 30 sessions recognition
 -------
 Session recognition is one of GeoSpy most interesting attractions, since you as a researcher can know remotely what service the target is connected to.
 
 * **USABILITY** You can delete logs and view alerts for each process or action you run against each target.
+
+***
 
 GeoSpy in work
 -------
@@ -97,10 +103,13 @@ optional arguments:
 
 **help**  It is used to see all the above options, from the executable.
 
+***
 
 Disclaimer
 -------
 This tool has been published educational purposes. It is intended to teach people how bad guys could track them, monitor them or obtain information from their credentials, we are not responsible for the use or the scope that someone may have through this project.
 We are totally convinced that if we teach how vulnerable things really are, we can make the Internet a safer place.
 
--------------
+***
+
+# Happy hacking!
