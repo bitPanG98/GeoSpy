@@ -1,6 +1,6 @@
 
 
-GeoSpy (stable) v2.0
+GeoSpy (BETA) v2.0
 ========
 
 People tracker on the Internet: Learn to track the world, to avoid being traced.
@@ -51,10 +51,7 @@ Some benefits
 ![](https://lh3.googleusercontent.com/gkOWunWn7ge5yJt00lMBN_7GwSUxrAQV2y64ysyrjmD-vz_lO3bu6UkRjPJF8OljxyMTNlWVA9W8gVU3U0iI3RrECNNkr7H44Lz6z5Zj3-bA_hDF5TnTSoV_6584qFvuLkmShTQD)
 
 
-* **PROFILE:** Brief summary of the target's behavior and important additional information about your device.
-
-  ---   **GPU**
-  ---   **ENERGY**
+* **PROFILE** Brief summary of the target's behavior and important additional information about your device.
 
 30-session recognition
 -------
@@ -62,14 +59,14 @@ Session recognition is one of GeoSpy most interesting attractions, since you as 
 
 ![](https://lh6.googleusercontent.com/IFxIh7Eemr63kycj2eBzJYvevCzLH5DkQGWUKzPx_Okn4WoExPl0LR7Qj-cSc0WF0rs9Ew6DJMwcyirZd0kdfLpdrqQ2700P_xdxW7wpZ7K6OWi8pluLKivHtU45HD4VtyM0lLwh)
 
-* **USABILITY:** You can delete logs and view alerts for each process or action you run against each target.
+* **USABILITY** You can delete logs and view alerts for each process or action you run against each target.
  
  ![](https://lh4.googleusercontent.com/dXx1lRG2z-ZlSIlQyTx_ra7sbkgKG2jeqGjIt86GebFiAaZyFDA4vy3QBLACd-1wOz4zdSIARWvo3hK2mEvrSJ6VPDSiOZgMLB4rUYXKDHrone0xIB3bwhAKPnsJUcuKW9xf_-sG)
  
-How to use it
+How it use
 -------
 
-* **INSTALLATION:**
+* **INSTALLATION**
 ```
 cd GeoSpy
 chmod +x install.sh
