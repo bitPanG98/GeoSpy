@@ -65,7 +65,7 @@ class utils:
         utils.Go("\t" + utils.Color['redBold'] + " / / __/ _ \/ __ \\__ \/ __ \/ / / /")
         utils.Go("\t" + utils.Color['redBold'] + "/ /_/ /  __/ /_/ /__/ / /_/ / /_/ / ")
         utils.Go("\t" + utils.Color['redBold'] + "\____/\___/\____/____/ .___/\__, /  ")
-        utils.Go("\t" + utils.Color['redBold'] + "                    /_/    /____/   " + utils.Color['white'] + " 2018 by " + utils.Color['whiteBold'] + "Ivan Nikolsky" + utils.Color['white'] + " (" + utils.Color['blue'] + "@entynetproject" + utils.Color['white'] + ")" + utils.Color['white'])
+        utils.Go("\t" + utils.Color['redBold'] + "                    /_/    /____/   " + utils.Color['white'] + "By " + utils.Color['whiteBold'] + "Ivan Nikolsky" + utils.Color['white'] + " (" + utils.Color['blue'] + "@entynetproject" + utils.Color['white'] + ")" + utils.Color['white'])
         utils.Go("\t" + "-----------------------------------------------")
         utils.Go(utils.Color['green'] + "\t" + "People tracker on internet for OSINT research " + utils.Color['white'] + "|=-" + utils.Color['white'])
         utils.Go("\t" + "-----------------------------------------------")
