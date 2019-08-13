@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf '\033]2;Invader Framework\a'
+printf '\033]2;GeoSpy Console\a'
 
 #blue start 
 	BS="-e \033[1;34m"
@@ -12,24 +12,6 @@ printf '\033]2;Invader Framework\a'
 	GNS="-e \033[1;32m"
 #white start
   WHS="\033[0;97m"
-
-if [[ "$1" = "-u" || "$1" = "--update" ]]
-then
-sleep 1
-echo ""$BS"[*] Installing update..."$CE""
-{
-cd
-rm -r ~/GeoSpy
-cd ~
-git clone https://github.com/entynetproject/GeoSpy.git
-cd GeoSpy
-chmod +x GeoSpy
-} &> /dev/null
-sleep 1
-echo ""$GNS"[*] Successfully updated..."$CE""
-sleep 1
-exit
-fi
 
 cd ~
 if [[ -d ~/GeoSpy ]]
