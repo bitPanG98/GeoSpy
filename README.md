@@ -1,6 +1,4 @@
-
-
-GeoSpy (stable) v2.0
+Geolocation Spy (GeoSpy)
 ========
 
 People tracker on the Internet: Learn to track the world, to avoid being traced.
