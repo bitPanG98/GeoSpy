@@ -105,10 +105,10 @@ class GeoSpy(object):
 				utils.Go(utils.Color['whiteBold'] + "[" + utils.Color['greenBold'] + "!" + utils.Color['whiteBold'] + "]" + " " + utils.Color['white'] + "Enter the information requested below to complete the execution" + utils.Color['white'])
 				utils.Go("")
 
-				options.url = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter a URL to generate the lure" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
+				options.url = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter an URL" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
 
 			if options.port is None:
-				options.port = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " What is your port to generate the server?" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
+				options.port = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter a port" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
 
 			while utils.checkPort(int(options.port)) == False:
 				utils.Go("\033[H\033[J")
@@ -120,11 +120,11 @@ class GeoSpy(object):
 				options.port = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " What is your port to generate the server?" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
 
 			#while utils.checkUrl(str(options.url)) == False:
-				options.url = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter a URL to generate the lure" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
+				options.url = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter an URL" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
 
 
 			utils.Go("")
-			utils.Go(utils.Color['greenBold'] + "-" + utils.Color['white'] + " Successful " + utils.Color['greenBold'] + "startup" + utils.Color['white'] + ", get lucky on the way!" + utils.Color['white'])
+			utils.Go(utils.Color['greenBold'] + "-" + utils.Color['white'] + " Successfull " + utils.Color['greenBold'] + "startup" + utils.Color['white'] + ", get lucky on the way!" + utils.Color['white'])
 			utils.Go("")
 			time.sleep(0.1)
 
@@ -142,7 +142,7 @@ class GeoSpy(object):
 			if (options.ngrok or (self.ngrok != "")):
 				if self.ngrok == '':
 					utils.Go("\033[H\033[J")
-					self.ngrok = raw_input("What is your nGrok token?" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
+					self.ngrok = raw_input("Ngrok Token API" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
 				if (self.ngrok != ''):
 					from core.ngrok import ngrok
 					import os.path as path
