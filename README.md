@@ -35,9 +35,6 @@ Some benefits
 
 * **PUBLIC NETWORK TUNNEL** GeoSpy has its own **API** that is linked to [ngrok.com](https://ngrok.com) to allow the automatic management of public network tunnels; So you can publish the content of your GeoSpy server which is executed locally to the Internet, to manage hooks or public attacks.
 
-![](https://lh5.googleusercontent.com/_f3zaCeZya_5AKaCoaPexyJVpNA7fiRqYQ9WBRiGLsHcx1W5V61V-VENeIRF2QbqvpenyOJ1AYyreTmOr2MWbf9PYu4qXF-tbYWi7qp6ZWeOwvoG3LYUdpjp3pAK9mIAQZzPJwAO)
-
-
 * **CLICK ATTACK TO GET CREDENTIALS** Automatically obtains the target credentials, recognizing your connection availability on a social network or Internet service.
 
 ![](https://lh4.googleusercontent.com/IN8xWfHjGPRQ__-QwTXebG-087m4JzDIVFWtSlUtrnRpDn2d0U1cnQdNGqLQZA35-fneej1iTpkxgHZCq_pWZLlCd1SmyLZ-WJ5Juj2KbtyNbX4jI1oLUtqupxieH91mX65_ZmHy)
