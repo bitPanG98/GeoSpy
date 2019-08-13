@@ -12,55 +12,37 @@ Some benefits
 -----------
 * **LOCATOR OPTIMIZATION** Trace the path between you and the target you're tracking. Each time you make a move, the path will be updated, the location of the target is obtained silently through a bypass made in the browsers, allowing you to skip the location request on the victim's side, and at the same time maintain a precision of **99%** in the locator.
 
-![](https://lh3.googleusercontent.com/qwq4LzzLTdFGwsGd8C3c9gxbDaN191s7lnvz75y0trwIMUGSaIu22QyBRgwKXxRwLBC5HGekBJLw9qgD5lnxgszcFVqJ24RVqv3q_T3HzD6wJeQU6oY4VVF8QT6Y83hstqD4C020)
 * **APPROACH:** When you're close to the target, GeoSpy will tell you.
 
-![](https://lh4.googleusercontent.com/NFnVGLoDF2BmM_N56w8Vf6cnyg1WWIIKgGC1MeBTKXxcIynMDfC1ZSu43ftoiYnwcBb2gjpVdS4y0zm5K7XAzvXf7bPIt5ZrWQCEq9eQuN8KL-SRPOtBgIZL53AWkJjwhC4gJUcG)
-
-*  **REST API** Generates an API (random or custom), and through this you can control and monitor other Web sites on the Internet remotely, getting the traffic of all visitors.
-
-![](https://lh6.googleusercontent.com/DtQiYYLoL9di3LPcSSTCZ3AuVMlQaNcDkBdv_fZFX7rztjg_epWmIaA2AlGsWCr5Mwr2nVfLcsg1I5PXEcx87ErLS8JaruvRsEUIkScydXA3JhvbsmJov7qxbKooGgD5u32kmBHW)
+* **REST API** Generates an API (random or custom), and through this you can control and monitor other Web sites on the Internet remotely, getting the traffic of all visitors.
 
 * **PROCESS HOOKS** Manages social engineering attacks or processes in the target's browser.
     
-  --- **SEVERAL** You can issue a phishing attack of any domain or service in real time as well as send malicious files to compromise the device of a target.
+* **SEVERAL** You can issue a phishing attack of any domain or service in real time as well as send malicious files to compromise the device of a target.
     
-
-  ---  **INJECT JS** You keep the JavaScript code running free in real time, so you can manage the execution of a **keylogger** or your own custom functions in JS which will be reflected in the target's browser.
+* **INJECT JS** You keep the JavaScript code running free in real time, so you can manage the execution of a **keylogger** or your own custom functions in JS which will be reflected in the target's browser.
     
-  ---   **SPEECH** A process of audio creation is maintained which is played in the browser of the target, by means of this you can execute personalized messages in different voices with languages in Spanish and English.
-    
-
-  
+* **SPEECH** A process of audio creation is maintained which is played in the browser of the target, by means of this you can execute personalized messages in different voices with languages in Spanish and English.
 
 * **PUBLIC NETWORK TUNNEL** GeoSpy has its own **API** that is linked to [ngrok.com](https://ngrok.com) to allow the automatic management of public network tunnels; So you can publish the content of your GeoSpy server which is executed locally to the Internet, to manage hooks or public attacks.
 
 * **CLICK ATTACK TO GET CREDENTIALS** Automatically obtains the target credentials, recognizing your connection availability on a social network or Internet service.
 
-![](https://lh4.googleusercontent.com/IN8xWfHjGPRQ__-QwTXebG-087m4JzDIVFWtSlUtrnRpDn2d0U1cnQdNGqLQZA35-fneej1iTpkxgHZCq_pWZLlCd1SmyLZ-WJ5Juj2KbtyNbX4jI1oLUtqupxieH91mX65_ZmHy)
-
 * **NETWORK** You can get information about the user's network.
 
-  ---  **SPEED** Viewing the target's network speed. (Ping, download, upload, type connection)
+* **SPEED** Viewing the target's network speed. (Ping, download, upload, type connection)
 
-  --- **HOSTS OR DEVICES** Here you can get a scan of all the devices that are connected in the target network automatically.
-
-![](https://lh3.googleusercontent.com/gkOWunWn7ge5yJt00lMBN_7GwSUxrAQV2y64ysyrjmD-vz_lO3bu6UkRjPJF8OljxyMTNlWVA9W8gVU3U0iI3RrECNNkr7H44Lz6z5Zj3-bA_hDF5TnTSoV_6584qFvuLkmShTQD)
-
+* **HOSTS OR DEVICES** Here you can get a scan of all the devices that are connected in the target network automatically.
 
 * **PROFILE** Brief summary of the target's behavior and important additional information about your device.
 
-30-session recognition
+30 sessions recognition
 -------
 Session recognition is one of GeoSpy most interesting attractions, since you as a researcher can know remotely what service the target is connected to.
 
-![](https://lh6.googleusercontent.com/IFxIh7Eemr63kycj2eBzJYvevCzLH5DkQGWUKzPx_Okn4WoExPl0LR7Qj-cSc0WF0rs9Ew6DJMwcyirZd0kdfLpdrqQ2700P_xdxW7wpZ7K6OWi8pluLKivHtU45HD4VtyM0lLwh)
-
 * **USABILITY** You can delete logs and view alerts for each process or action you run against each target.
- 
- ![](https://lh4.googleusercontent.com/dXx1lRG2z-ZlSIlQyTx_ra7sbkgKG2jeqGjIt86GebFiAaZyFDA4vy3QBLACd-1wOz4zdSIARWvo3hK2mEvrSJ6VPDSiOZgMLB4rUYXKDHrone0xIB3bwhAKPnsJUcuKW9xf_-sG)
- 
-How it use
+
+GeoSpy in work
 -------
 
 * **INSTALLATION**
@@ -97,23 +79,23 @@ optional arguments:
                         Update GeoSpy to the latest version.
 ```
 
-**--url**  In this option you add the URL you want to clone, which works as a decoy.
+**url**  In this option you add the URL you want to clone, which works as a decoy.
 
-**--port**  Here you insert the port, where you are going to run the  **GeoSpy server**.
+**port**  Here you insert the port, where you are going to run the  **GeoSpy server**.
 
-**--accesskey**  You enter a custom key for the  **GeoSpy panel**, if you do not insert it will generate an  **automatic key**.
+**accesskey**  You enter a custom key for the  **GeoSpy panel**, if you do not insert it will generate an  **automatic key**.
 
-**--injectcode**  GeoSpy contains a  **REST API**  to play anywhere, using this option you can customize the name of the file to include, if it does not, generates a random name allusive to a token.
+**injectcode**  GeoSpy contains a  **REST API**  to play anywhere, using this option you can customize the name of the file to include, if it does not, generates a random name allusive to a token.
 
-**--local**  Using this option you can call a local **HTML file**, this is the replacement of the  **--url**  option made to run a local lure in GeoSpy.
+**local**  Using this option you can call a local **HTML file**, this is the replacement of the  **--url**  option made to run a local lure in GeoSpy.
 
-**--ngrok**  In this option you can enter a token, to run at the time of a process. This would replace the token saved in configurations.
+**ngrok**  In this option you can enter a token, to run at the time of a process. This would replace the token saved in configurations.
 
-**--version**  You can see the version number of GeoSpy.
+**version**  You can see the version number of GeoSpy.
 
-**--update**  Option used to upgrade to the latest version of **GeoSpy**.
+**update**  Option used to upgrade to the latest version of **GeoSpy**.
 
-**--help**  It is used to see all the above options, from the executable.
+**help**  It is used to see all the above options, from the executable.
 
 
 Disclaimer
