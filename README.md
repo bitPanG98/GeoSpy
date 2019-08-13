@@ -113,5 +113,3 @@ We are totally convinced that if we teach how vulnerable things really are, we c
 GeoSpy has not been added to the Entynet Pentester Kit (EPK), has not been added to the Epath Packager (epkg) and has not been added to the Ehtools Framework Arsenal (Ehtools Tools Menu) in order to avoid bad consequences and complaints against us, this tool is quite dangerous and will be independent in comparison with the others.
 
 ***
-
-# Happy hacking!
