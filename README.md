@@ -26,7 +26,7 @@ Some benefits
     
 * **SPEECH** A process of audio creation is maintained which is played in the browser of the target, by means of this you can execute personalized messages in different voices with languages in Spanish and English.
 
-* **PUBLIC NETWORK TUNNEL** GeoSpy has its own **API** that is linked to [ngrok.com](https://ngrok.com) to allow the automatic management of public network tunnels; So you can publish the content of your GeoSpy server which is executed locally to the Internet, to manage hooks or public attacks.
+* **PUBLIC NETWORK TUNNEL** GeoSpy has its own **API** that is linked to **ngrok.com** to allow the automatic management of public network tunnels; So you can publish the content of your GeoSpy server which is executed locally to the Internet, to manage hooks or public attacks.
 
 * **CLICK ATTACK TO GET CREDENTIALS** Automatically obtains the target credentials, recognizing your connection availability on a social network or Internet service.
 
@@ -52,6 +52,7 @@ GeoSpy in work
 -------
 
 * **INSTALLATION**
+
 ```
 cd GeoSpy
 chmod +x install.sh
@@ -59,11 +60,13 @@ chmod +x install.sh
 ```
 
 * **EXECUTION**
+
 ```
 geospy --url http://example.com --port 8080
 ```
 
 * **USAGE**
+
 ```
 usage: geospy -u <> -p <> [-h] [-v] [-u URL] [-p PORT]
                                               [-ak ACCESSKEY] [-l LOCAL]
