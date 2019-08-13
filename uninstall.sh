@@ -13,7 +13,7 @@ exit
 fi
 
 {
-rm /bin/GeoSpy
-rm /usr/local/bin/GeoSpy
+rm /bin/geospy
+rm /usr/local/bin/geospy
 rm -r ~/GeoSpy
 } &> /dev/null
