@@ -117,10 +117,10 @@ class GeoSpy(object):
 				utils.Go("----------------------------------------------")
 				utils.Go("\n")
 				utils.Go(utils.Color['whiteBold'] + "[" + utils.Color['redBold'] + "x" + utils.Color['whiteBold'] + "]" + utils.Color['redBold'] + " " + "ERROR:" + " " + utils.Color['whiteBold'] + "The port: " + options.port + utils.Color['white'] + " " + "is not available, It was previously used (" + utils.Color['yellow'] + "Use another port" + utils.Text['end'] + ")" + "\n\n")
-				options.port = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " What is your port to generate the server?" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
+				options.port = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter a port" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
 
 			#while utils.checkUrl(str(options.url)) == False:
-				options.url = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter an URL" + " " + utils.Color['yellow'] + ":~> " + utils.Color['white'])
+				options.url = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Enter an URL" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
 
 
 			utils.Go("")
