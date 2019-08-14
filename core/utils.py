@@ -62,7 +62,7 @@ class utils:
         utils.Go("\033[H\033[J")
         utils.Go("\t" + utils.Color['redBold'] + "Geolocation Spy" + utils.Color['white'] + " By " + utils.Color['whiteBold'] + "Ivan Nikolsky" + utils.Color['white'] + " (" + utils.Color['blue'] + "@entynetproject" + utils.Color['white'] + ")" + utils.Color['white'])
         utils.Go("\t" + "-----------------------------------------------")
-        utils.Go(utils.Color['green'] + "\t" + "| People tracker on internet for OSINT research " + utils.Color['white'] + " |" + utils.Color['white'])
+        utils.Go(utils.Color['green'] + "\t" + "People tracker on internet for OSINT research " + utils.Color['white'] + "|=-" + utils.Color['white'])
         utils.Go("\t" + "-----------------------------------------------")
         utils.Go("\t" + "| " + utils.Color['white'] + "v" + utils.Color['redBold'] + "2.0" + utils.Color['white'] + " |")    
         utils.Go("\t" + "--------" + "\n")
