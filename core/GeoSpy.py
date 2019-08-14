@@ -124,7 +124,7 @@ class GeoSpy(object):
 
 
 			utils.Go("")
-			utils.Go(utils.Color['greenBold'] + "-" + utils.Color['white'] + " Successfull " + utils.Color['greenBold'] + "startup" + utils.Color['white'] + ", get lucky on the way!" + utils.Color['white'])
+			utils.Go(utils.Color['greenBold'] + "-" + utils.Color['white'] + " Successful " + utils.Color['greenBold'] + "startup" + utils.Color['white'] + ", get lucky on the way!" + utils.Color['white'])
 			utils.Go("")
 			time.sleep(0.1)
 
