@@ -60,7 +60,8 @@ class utils:
     @staticmethod
     def banner():
         utils.Go("\033[H\033[J")
-        os.system("cd && cat GeoSpy/banner/banner.txt")
+        os.system("cd && chmod +x GeoSpy/banner/banner.sh && GeoSpy/banner/banner.sh")
+        print("")
         utils.Go("\t" + utils.Color['redBold'] + "Geolocation Spy" + utils.Color['white'] + " By " + utils.Color['whiteBold'] + "Ivan Nikolsky" + utils.Color['white'] + " (" + utils.Color['blue'] + "@entynetproject" + utils.Color['white'] + ")" + utils.Color['white'])
         utils.Go("\t" + "-----------------------------------------------")
         utils.Go(utils.Color['green'] + "\t" + "People tracker on internet for OSINT research " + utils.Color['white'] + "|=-" + utils.Color['white'])
