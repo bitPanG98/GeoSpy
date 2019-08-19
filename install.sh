@@ -14,14 +14,13 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations under
 # the License.
-
+#
 # Disclaimer:
 # This tool has been published educational purposes. It is intended to teach 
 # people how bad guys could track them, monitor them or obtain information from 
 # their credentials, we are not responsible for the use or the scope that someone 
 # may have through this project. We are totally convinced that if we teach how 
 # vulnerable things really are, we can make the Internet a safer place.
-
 
 RSA="\033[31m"
 YSA="\033[1;93m"
