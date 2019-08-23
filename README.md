@@ -68,7 +68,7 @@ chmod +x install.sh
 * **EXECUTION**
 
 ```
-geospy --url <url> --port <port>
+geospy --url http://example.com --port 80
 ```
 
 * **USAGE**
