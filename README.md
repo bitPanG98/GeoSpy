@@ -74,9 +74,8 @@ geospy --url http://example.com --port 8080
 * **USAGE**
 
 ```
-usage: geospy -u <URL> -p <PORT> [-h] [-v] [-u URL] [-p PORT]
-                                 [-ak ACCESSKEY] [-l LOCAL] [-n]
-                                 [-ic INJC] [-ud]
+usage: geospy -u <URL> -p <PORT> [-h] [-v] [-u URL] [-p PORT] [-ak ACCESSKEY] 
+                                 [-l LOCAL] [-n] [-ic INJC] [-ud]
 
 optional arguments:
   -h, --help            show this help message and exit
