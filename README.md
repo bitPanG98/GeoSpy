@@ -89,8 +89,7 @@ optional arguments:
   -n, --ngrok           Insert your ngrok Authtoken.
   -ic INJC, --injectcode INJC
                         Insert your custom REST API path.
-  -ud UPDATE, --update UPDATE
-                        Update GeoSpy to the latest version.
+  -ud, --update         Update GeoSpy to the latest version.
 ```
 
    **--url**  In this option you add the URL you want to clone, which works as a decoy.
