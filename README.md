@@ -65,10 +65,12 @@ chmod +x install.sh
 ./install.sh
 ```
 
-* **EXECUTION**
+* **EXAMPLE**
+
+> Example of the generating url
 
 ```
-geospy --url URL --port PORT
+geospy --url http://example.com --port 80
 ```
 
 * **USAGE**
