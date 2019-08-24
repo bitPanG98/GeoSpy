@@ -68,14 +68,14 @@ chmod +x install.sh
 * **EXECUTION**
 
 ```
-geospy --url <URL> --port <PORT>
+geospy --url URL --port PORT
 ```
 
 * **USAGE**
 
 ```
-usage: geospy -u <URL> -p <PORT> [-h] [-v] [-u URL] [-p PORT] [-ak ACCESSKEY] 
-                                 [-l LOCAL] [-n] [-ic INJC] [-ud]
+usage: geospy -u URL -p PORT [-h] [-v] [-u URL] [-p PORT] [-ak ACCESSKEY] 
+                             [-l LOCAL] [-n] [-ic INJC] [-ud]
 
 optional arguments:
   -h, --help            show this help message and exit
