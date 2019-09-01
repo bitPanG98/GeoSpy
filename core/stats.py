@@ -16,7 +16,7 @@ import sys
 import os
 from flask import Flask, render_template, session, request, json, redirect, url_for, send_from_directory
 from flask_cors import CORS
-from GeoSpy import GeoSpy
+from geospy import GeoSpy
 from core.db import Database
 
 # Main parts, to generate relationships among others
