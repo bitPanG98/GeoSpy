@@ -239,7 +239,7 @@ class GeoSpy(object):
 	def loadCheck(self):
 		utils.checkOS()
 		
-    # the main file (GeoSpy.py)
+    # the main file (geospy.py)
 	def main(self):
 		import core.sockets
 
