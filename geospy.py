@@ -44,7 +44,7 @@
 ###############################################
                                               #
 from core.utils import utils                  #
-from core.GeoSpy import GeoSpy                  #
+from core.geospy import GeoSpy                #
 from core.db import Database                  #
 from time import sleep                        #                  
 try:                                          #
