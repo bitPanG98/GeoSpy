@@ -60,7 +60,7 @@ GeoSpy in work
 * **INSTALLATION**
 
 ```
-cd GeoSpy
+cd geospy
 chmod +x install.sh
 ./install.sh
 ```
