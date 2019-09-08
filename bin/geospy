@@ -36,10 +36,10 @@ printf '\033]2;GeoSpy Console\a'
   WHS="\033[0;97m"
 
 cd ~
-if [[ -d ~/GeoSpy ]]
+if [[ -d ~/geospy ]]
 then
 {
-cd ~/GeoSpy
+cd ~/geospy
 } &> /dev/null
 python geospy.py $1 $2 $3 $4 $5 $6 $7 $8 $9
 else
@@ -50,8 +50,8 @@ if [[ "$ASESR" != "" ]]
 then 
 cd ~
 {
-git clone https://github.com/entynetproject/GeoSpy.git
-cd ~/GeoSpy
+git clone https://github.com/entynetproject/geospy.git
+cd ~/geospy
 } &> /dev/null
 python geospy.py $1 $2 $3 $4 $5 $6 $7 $8 $9
 else
