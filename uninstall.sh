@@ -39,5 +39,5 @@ fi
 {
 rm /bin/geospy
 rm /usr/local/bin/geospy
-rm -r ~/GeoSpy
+rm -r ~/geospy
 } &> /dev/null
