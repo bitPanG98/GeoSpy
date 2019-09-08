@@ -36,9 +36,9 @@ then
 exit
 fi
 
-if [[ -d ~/GeoSpy ]]
+if [[ -d ~/geospy ]]
 then
-cd ~/GeoSpy
+cd ~/geospy
 {
 cp bin/geospy /usr/local/bin
 chmod +x /usr/local/bin/geospy
@@ -49,8 +49,8 @@ python -m pip install -r requirements.txt
 else
 cd ~
 {
-git clone https://github.com/entynetproject/GeoSpy.git
-cd  ~/GeoSpy
+git clone https://github.com/entynetproject/geospy.git
+cd  ~/geospy
 cp bin/geospy /usr/local/bin
 chmod +x /usr/local/bin/geospy
 cp bin/geospy /bin
