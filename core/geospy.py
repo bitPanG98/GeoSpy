@@ -98,7 +98,7 @@ class GeoSpy(object):
 			if options.url is None:
 				utils.Go("\033[H\033[J")
 				utils.Go("----------------------------------------------")
-				utils.Go("" + " " + utils.Color['redBold'] + "GeoSpy" + utils.Color['white'] +" {" + utils.Color['yellowBold'] + "stable" + utils.Color['white'] + "}" + utils.Color['white'] + " - " + "Osint and analytics tool" + " " + "<" +utils.Color['white'])
+				utils.Go("" + " " + utils.Color['redBold'] + "GeoSpy" + utils.Color['white'] +" {" + utils.Color['yellowBold'] + "stable" + utils.Color['white'] + "}" + utils.Color['white'] + " - " + "OSINT and analytics tool" + " " + "<" +utils.Color['white'])
 				utils.Go("----------------------------------------------")
 				utils.Go("| v" + utils.Color['redBold'] + "2.0" + utils.Color['white'] + " |")    
 				utils.Go("--------" + "\n")
@@ -113,7 +113,7 @@ class GeoSpy(object):
 			while utils.checkPort(int(options.port)) == False:
 				utils.Go("\033[H\033[J")
 				utils.Go("----------------------------------------------")
-				utils.Go("" + " " + utils.Color['redBold'] + "GeoSpy" + utils.Color['white'] +" {" + utils.Color['yellowBold'] + "stable" + utils.Color['white'] + "}" + utils.Color['white'] + " - " + "Osint and analytics tool" + " " + "<" +utils.Color['white'])
+				utils.Go("" + " " + utils.Color['redBold'] + "GeoSpy" + utils.Color['white'] +" {" + utils.Color['yellowBold'] + "stable" + utils.Color['white'] + "}" + utils.Color['white'] + " - " + "OSINT and analytics tool" + " " + "<" +utils.Color['white'])
 				utils.Go("----------------------------------------------")
 				utils.Go("\n")
 				utils.Go(utils.Color['whiteBold'] + "[" + utils.Color['redBold'] + "x" + utils.Color['whiteBold'] + "]" + utils.Color['redBold'] + " " + "ERROR:" + " " + utils.Color['whiteBold'] + "The port: " + options.port + utils.Color['white'] + " " + "is not available, It was previously used (" + utils.Color['yellow'] + "Use another port" + utils.Text['end'] + ")" + "\n\n")
