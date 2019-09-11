@@ -33,8 +33,8 @@
 #
 # @version     2.0
 # @link        https://github.com/entynetproject/GeoSpy
-# @author      Ivan Nikolsky (@entynetproject)
-# @copyright   2018 by Ivan Nikolsky / <entynetproject@gmail.com>
+# @author      Entynetproject
+# @copyright   2018 by Entynetproject / <entynetproject@gmail.com>
 #
 # This file is the boot in GeoSpy.
 # For full copyright information this visit: https://github.com/entynetproject/GeoSpy
@@ -72,7 +72,7 @@ if generateData.firstTime:
     utils.Go("This is a monitoring and research tool " + utils.Color['whiteBold'] + "OSINT" + utils.Color['white'] + ", which is distributed \nfor educational and investigative purposes, the person who has bought \nor uses this tool is responsible for its proper use or actions committed, \n" + utils.Color['whiteBold'] + "Ivan Nikolsky" + utils.Color['white'] + " (" + utils.Color['blue'] + "@entynetproject" + utils.Color['white'] + ") is not responsible for the use Or the scope that people can have \nthrough this software." + "\n")
     utils.Go(utils.Color['whiteBold']+ "CREATOR" + utils.Color['white'])
     utils.Go("------")
-    utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Name: " + utils.Color['white'] + "Ivan Nikolsky" + " " + utils.Color['white'])
+    utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Developer: " + utils.Color['white'] + "Entynetproject" + " " + utils.Color['white'])
     utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "GitHub: " + utils.Color['white'] + "https://github.com/entynetproject")
     utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Twitter: " + utils.Color['white'] + "https://twitter.com/entynetproject" + utils.Color['white'] + "\n")
     sleep(3)
