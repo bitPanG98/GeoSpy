@@ -32,12 +32,12 @@
 # Learn to track the world, to avoid being traced
 #
 # @version     2.0
-# @link        https://github.com/entynetproject/GeoSpy
+# @link        https://github.com/entynetproject/geospy
 # @author      Entynetproject
 # @copyright   2018 by Entynetproject / <entynetproject@gmail.com>
 #
 # This file is the boot in GeoSpy.
-# For full copyright information this visit: https://github.com/entynetproject/GeoSpy
+# For full copyright information this visit: https://github.com/entynetproject/geospy
 #
 #**
 #
