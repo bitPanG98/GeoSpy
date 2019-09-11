@@ -9,7 +9,7 @@
 # GeoSpy depends of this file
 # For full copyright information this visit: https://github.com/entynetproject/GeoSpy
 #
-# Copyright 2018 by Ivan Nikolsky (@entynetproject) / <entynetproject@gmail.com>
+# Copyright 2018 by Entynetproject / <entynetproject@gmail.com>
 #**
 class victim(object):
     def __init__(self, vId, ip, device, browser, version, ports, cpu, date):
