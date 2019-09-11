@@ -7,7 +7,7 @@
 #########
 #
 # GeoSpy depends of this file
-# For full copyright information this visit: https://github.com/entynetproject/GeoSpy
+# For full copyright information this visit: https://github.com/entynetproject/geospy
 #
 # Copyright 2018 by Entynetproject / <entynetproject@gmail.com>
 #**
