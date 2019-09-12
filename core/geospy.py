@@ -214,7 +214,7 @@ class GeoSpy(object):
 						r = utils.gShortener(self.googl, ngrokStatus.replace('https', 'http') + '/' + self.victim_path)
 						gooGl = json.loads(r._content)
 						if r.status_code == 200:
-							utils.Go(utils.Color['white'] + "\t" + utils.Color['yellow'] + ">" + utils.Color['white'] + "-" + utils.Color['blue'] + "=" + utils.Color['white'] + "["  + utils.Color['white'] + " Link shortened lure: " + utils.Color['blue'] + gooGl['id']  + utils.Color['white'] + " " + "(share)")
+							utils.Go(utils.Color['white'] + "\t" + utils.Color['yellow'] + ">" + utils.Color['white'] + "-" + utils.Color['blue'] + "=" + utils.Color['white'] + "["  + utils.Color['white'] + " Link Shortened Lure: " + utils.Color['blue'] + gooGl['id']  + utils.Color['white'] + " " + "(share)")
 						else:
 							time.sleep(0)
 						self.nGrokUrl = ngrokStatus.replace('https', 'http')
@@ -247,7 +247,7 @@ class GeoSpy(object):
 	def GeoSpy_config(self):
 		utils.Go("\033[H\033[J")
 		utils.Go("----------------------------------------------------------")
-		utils.Go("" + " " + utils.Color['redBold'] + "GeoSpy" + utils.Color['white'] +" {" + utils.Color['yellowBold'] + "stable" + utils.Color['white'] + "}" + utils.Color['white'] + " - " + "Configuration zone to use the software" + " " + "<" + utils.Color['white'])
+		utils.Go("" + " " + utils.Color['redBold'] + "GeoSpy" + utils.Color['white'] +" {" + utils.Color['yellowBold'] + "stable" + utils.Color['white'] + "}" + utils.Color['white'] + " - " + "Configuration zone to use the GeoSpy" + " " + "<" + utils.Color['white'])
 		utils.Go("----------------------------------------------------------")
 		utils.Go("| v" + utils.Color['redBold'] + "2.0" + utils.Color['white'] + " |")    
 		utils.Go("--------" + "\n")
