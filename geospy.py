@@ -69,14 +69,14 @@ if generateData.firstTime:
     utils.Go("This is an exclusive version for researchers, or professionals \nwho are dedicated to research, we hope you enjoy." + "\n")
     utils.Go(utils.Color['whiteBold'] + "DISCLAIMER" + utils.Color['white'])
     utils.Go("------")
-    utils.Go("This is a monitoring and research tool " + utils.Color['whiteBold'] + "OSINT" + utils.Color['white'] + ", which is distributed \nfor educational and investigative purposes, the person who has bought \nor uses this tool is responsible for its proper use or actions committed, \n" + utils.Color['whiteBold'] + "Entynetproject" + utils.Color['white'] + " is not responsible for the use or the scope that people can have \nthrough this software." + "\n")
+    utils.Go("This is a monitoring and research tool " + utils.Color['whiteBold'] + "OSINT" + utils.Color['white'] + ", which is distributed \nfor educational and investigative purposes, the person who has bought \nor uses this tool is responsible for its proper use or actions committed, \n" + utils.Color['whiteBold'] + "Entynetproject" + utils.Color['white'] + " is not responsible for the use or the scope that \npeople can have through this software." + "\n")
     utils.Go(utils.Color['whiteBold']+ "CREATOR" + utils.Color['white'])
     utils.Go("------")
     utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Developer: " + utils.Color['white'] + "Entynetproject" + utils.Color['white'])
     utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "GitHub: " + utils.Color['white'] + "https://github.com/entynetproject")
     utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Twitter: " + utils.Color['white'] + "https://twitter.com/entynetproject" + utils.Color['white'] + "\n")
     sleep(3)
-    utils.Go("Press ENTER to Continue...")
+    utils.Go("Press enter to Continue...")
     raw_input()
 
 # check OS
