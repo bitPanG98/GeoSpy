@@ -74,10 +74,10 @@ usage: geospy -u URL -p PORT [-h] [-v] [-u URL] [-p PORT] [-ak ACCESSKEY]
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         show program's version number and exit
-  -u URL, --url URL     Put the web page url to clone.
+  -u URL, --url URL     Put the web page URL to clone.
   -p PORT, --port PORT  Insert your port.
   -ak ACCESSKEY, --accesskey ACCESSKEY
-                        Insert your custom key access.
+                        Insert your custom Access Key.
   -l LOCAL, --local LOCAL
                         Insert your home file.
   -n, --ngrok           Insert your ngrok Authtoken.
