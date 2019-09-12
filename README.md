@@ -54,7 +54,7 @@ Session recognition is one of GeoSpy most interesting attractions, since you as 
 
 ***
 
-# GeoSpy in work
+How to use GeoSpy
 -------
 
 * **INSTALLATION**
