@@ -92,7 +92,7 @@ class GeoSpy(object):
 				utils.Go("Updating..." + " " + utils.Color['blue'] + "GeoSpy" + utils.Color['white'] + "..." + "\n")
 				subprocess.check_output(["git", "reset", "--hard", "origin/master"])
 				subprocess.check_output(["git", "pull"])
-				utils.Go("GeoSpy Updated... Please execute again...")
+				utils.Go("GeoSpy updated... Please execute it again...")
 				sys.exit(0)
 
 			if options.url is None:
@@ -263,7 +263,7 @@ class GeoSpy(object):
 		utils.Go("")
 		utils.Go(utils.Color['whiteBold'] + "GOOGLE API" + utils.Color['white'])
 		utils.Go("------")
-		utils.Go("You must register with the " + utils.Color['blueBold'] + "Google Console" + utils.Color['white'] + ", and get an API for maps and another for shortening. \nBy having these data you complete the settings")
+		utils.Go("You must register with the " + utils.Color['blueBold'] + "Google Console" + utils.Color['white'] + ", and get an API for maps and another for shortening. \nBy having these data you complete the settings.")
 		utils.Go("")
 		c_gMapsToken = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Google Maps API" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
 		c_gOoglToken = raw_input(utils.Color['blueBold'] + "-" + utils.Color['white'] + " Goo.gl (shortener) API" + " " + utils.Color['yellow'] + "~> " + utils.Color['white'])
