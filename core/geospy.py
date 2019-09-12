@@ -246,9 +246,9 @@ class GeoSpy(object):
 	# Create config file
 	def GeoSpy_config(self):
 		utils.Go("\033[H\033[J")
-		utils.Go("----------------------------------------------------------")
-		utils.Go("" + " " + utils.Color['redBold'] + "GeoSpy" + utils.Color['white'] +" {" + utils.Color['yellowBold'] + "stable" + utils.Color['white'] + "}" + utils.Color['white'] + " - " + "Configuration zone to use the GeoSpy" + " " + "<" + utils.Color['white'])
-		utils.Go("----------------------------------------------------------")
+		utils.Go("---------------------------------------------------------")
+		utils.Go("" + " " + utils.Color['redBold'] + "GeoSpy" + utils.Color['white'] +" {" + utils.Color['yellowBold'] + "stable" + utils.Color['white'] + "}" + utils.Color['white'] + " - " + "Configuration zone to use the GeoSpy " + "|" + utils.Color['white'])
+		utils.Go("---------------------------------------------------------")
 		utils.Go("| v" + utils.Color['redBold'] + "2.0" + utils.Color['white'] + " |")    
 		utils.Go("--------" + "\n")
 		utils.Go(utils.Color['whiteBold'] + "GENERAL CONFIG" + utils.Color['white'])
