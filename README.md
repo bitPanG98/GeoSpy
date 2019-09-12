@@ -88,9 +88,9 @@ optional arguments:
 
    **--url**  In this option you add the URL you want to clone, which works as a decoy.
 
-   **--port**  Here you insert the port, where you are going to run the  **GeoSpy server**.
+   **--port**  Here you insert the port, where you are going to run the  **GeoSpy Server**.
 
-   **--accesskey**  You enter a custom key for the  **GeoSpy panel**, if you do not insert it will generate an  **automatic key**.
+   **--accesskey**  You enter a custom key for the  **GeoSpy Panel**, if you do not insert it will generate an  **automatic key**.
 
    **--injectcode**  GeoSpy contains a  **REST API**  to play anywhere, using this option you can customize the name of the file to include, if it does not, generates a random name allusive to a token.
 
@@ -100,7 +100,7 @@ optional arguments:
 
    **--version**  You can see the version number of GeoSpy.
 
-   **--update**  Option used to upgrade to the latest version of **GeoSpy**.
+   **--update**  Option used to upgrade to the latest version of GeoSpy.
 
    **--help**  It is used to see all the above options, from the executable.
 
