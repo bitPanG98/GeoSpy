@@ -73,10 +73,10 @@ if generateData.firstTime:
     utils.Go(utils.Color['whiteBold']+ "CREATOR" + utils.Color['white'])
     utils.Go("------")
     utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Developer: " + utils.Color['white'] + "Entynetproject" + utils.Color['white'])
-    utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "GitHub: " + utils.Color['white'] + "https://github.com/entynetproject")
-    utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Twitter: " + utils.Color['white'] + "https://twitter.com/entynetproject" + utils.Color['white'] + "\n")
+    utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Twitter: " + utils.Color['white'] + "https://twitter.com/entynetproject")
+    utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Site: " + utils.Color['white'] + "http://entynetproject.simplesite.com" + utils.Color['white'] + "\n")
     sleep(3)
-    utils.Go("Press enter to Continue...")
+    utils.Go("Press enter to continue...")
     raw_input()
 
 # check OS
