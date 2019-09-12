@@ -75,7 +75,7 @@ class GeoSpy(object):
 			parser = argparse.ArgumentParser("geospy -u URL -p PORT", version=self.version)
 			parser.add_argument('-u', '--url', dest='url', help='Put the web page url to clone.')
 			parser.add_argument('-p', '--port', dest='port', help='Insert your port.')
-			parser.add_argument('-ak', '--accesskey', dest='accesskey', help='Insert your custom key access.')
+			parser.add_argument('-ak', '--accesskey', dest='accesskey', help='Insert your custom Access Key.')
 			parser.add_argument('-l', '--local', dest='local', help='Insert your home file.')
 			parser.add_argument('-n', '--ngrok', dest='ngrok', help='Insert your ngrok Authtoken.', action='store_true')
 			parser.add_argument('-ic', '--injectcode', dest='injc', help='Insert your custom REST API path.')
