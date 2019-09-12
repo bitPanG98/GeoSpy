@@ -64,9 +64,9 @@ generateData = Database()
 if generateData.firstTime:
     utils.Go("\033[H\033[J")         
     utils.Go("\t" + utils.Color['white'] + "--" + " " + "v" + utils.Color['redBold'] + "2.0" + utils.Color['white'] + " " + "--" + "\n" + utils.Color['white'])
-    utils.Go(utils.Color['whiteBold'] + "WELCOME " + utils.Color['greenBold'] + os.uname()[1].upper() + utils.Color['whiteBold'] + " TO GeoSpy" + utils.Color['white'])
+    utils.Go(utils.Color['whiteBold'] + "Welcome " + utils.Color['greenBold'] + os.uname()[1].upper() + utils.Color['whiteBold'] + " to GeoSpy" + utils.Color['white'])
     utils.Go("------")
-    utils.Go("This is a exclusive version for researchers, or professionals \nwho are dedicated to research, we hope you enjoy." + "\n")
+    utils.Go("This is an exclusive version for researchers, or professionals \nwho are dedicated to research, we hope you enjoy." + "\n")
     utils.Go(utils.Color['whiteBold'] + "DISCLAIMER" + utils.Color['white'])
     utils.Go("------")
     utils.Go("This is a monitoring and research tool " + utils.Color['whiteBold'] + "OSINT" + utils.Color['white'] + ", which is distributed \nfor educational and investigative purposes, the person who has bought \nor uses this tool is responsible for its proper use or actions committed, \n" + utils.Color['whiteBold'] + "Entynetproject" + utils.Color['white'] + " is not responsible for the use or the scope that people can have \nthrough this software." + "\n")
@@ -76,7 +76,7 @@ if generateData.firstTime:
     utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "GitHub: " + utils.Color['white'] + "https://github.com/entynetproject")
     utils.Go(utils.Color["white"] + "- " + utils.Color["greenBold"] + "Twitter: " + utils.Color['white'] + "https://twitter.com/entynetproject" + utils.Color['white'] + "\n")
     sleep(3)
-    utils.Go("Press enter to Continue...")
+    utils.Go("Press ENTER to Continue...")
     raw_input()
 
 # check OS
