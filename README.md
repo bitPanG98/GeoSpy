@@ -65,12 +65,6 @@ chmod +x install.sh
 ./install.sh
 ```
 
-* **EXAMPLE**
-
-```
-geospy --url http://example.com --port 80
-```
-
 * **USAGE**
 
 ```
@@ -109,6 +103,12 @@ optional arguments:
    **--update**  Option used to upgrade to the latest version of **GeoSpy**.
 
    **--help**  It is used to see all the above options, from the executable.
+
+* **EXAMPLE**
+
+```
+geospy --url http://example.com --port 80
+```
 
 ***
 
