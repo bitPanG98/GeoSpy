@@ -57,6 +57,14 @@ chmod +x install.sh
 ./install.sh
 ```
 
+* **UNINSTALLATION**
+
+```
+cd geospy
+chmod +x uninstall.sh
+./uninstall.sh
+```
+
 * **USAGE**
 
 ```
