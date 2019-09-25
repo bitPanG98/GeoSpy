@@ -122,7 +122,7 @@ We are totally convinced that if we teach how vulnerable things really are, we c
 GeoSpy apache license
 -------
 
-    Copyright (C) 2016 - 2018 Entynetproject, Inc.
+    Copyright (C) 2016 - 2018 Entynetproject
 
     Licensed under the Apache License, Version 2.0 (the "License"); you may not
     use the software except in compliance with the License.
