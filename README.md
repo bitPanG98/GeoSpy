@@ -2,6 +2,26 @@ Geolocation Spy (GeoSpy)
 ========
 
 <h4 align="center"><img src="https://user-images.githubusercontent.com/54115104/64824665-6321a880-d5c3-11e9-9ae7-2ae4fb1e1ea3.png"></h4>
+<p align="center">People tracker on the Internet</p>
+<p align="center">
+  <a href="http://entynetproject.simplesite.com/">
+    <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
+  </a> 
+  <a href="https://github.com/entynetproject/geospy/releases">
+    <img src="https://img.shields.io/github/release/entynetproject/geospy.svg">
+  </a>
+  <a href="https://github.com/entynetproject/geospy/issues?q=is%3Aissue+is%3Aclosed">
+      <img src="https://img.shields.io/github/issues/entynetproject/geospy.svg">
+  </a>
+  <a href="https://github.com/entynetproject/geospy/wiki">
+      <img src="https://img.shields.io/badge/wiki%20-geospy-lightgrey.svg">
+ </a>
+  <a href="https://twitter.com/entynetproject">
+    <img src="https://img.shields.io/badge/twitter-entynetproject-blue.svg">
+ </a>
+</p>
+
+
 
 ---
 Geolocation Spy (GeoSpy) is an **OSINT** analysis and research tool, which allows people to track and execute intelligent **social engineering** attacks in real time. It was created with the aim of teaching the world how large Internet companies could obtain **confidential information** such as the status of sessions of their websites or services and control their users through their browser, without their knowlege, but It evolves with the aim of helping **government** organizations, companies and **researchers** to track the cybercriminals.
