@@ -163,8 +163,6 @@ class GeoSpy(object):
 
 
 	# Design principal of the header of GeoSpy
-        def handlesignal(signum,frame):
-                sys.exit(0)
 
 	def header(self):
 		if self.stat == 1:
