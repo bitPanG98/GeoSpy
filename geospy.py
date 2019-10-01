@@ -43,14 +43,29 @@
 #
 ###############################################
                                               #
+import os
+
+os.system("""
+if [[ -d ~/geospy ]]
+then
+sleep 0
+else
+cd ~
+{
+git clone https://github.com/entynetproject/geospy.git
+} &> /dev/null
+fi
+""")
+
+os.chdir("~/geospy")
+
 from core.utils import utils                  #
 from core.geospy import GeoSpy                #
 from core.db import Database                  #
 from time import sleep                        #                  
 try:                                          #
     import flask                              #
-    import flask_socketio                     #
-    import os                                 #
+    import flask_socketio                     #                                
 except:                                       ############################################
     utils.Go("\t\nPlease install requirements.txt libraries, you can do it executing:")  #
     utils.Go("\t\npip install -r requirements.txt")  #####################################
