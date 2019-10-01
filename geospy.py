@@ -57,7 +57,7 @@ git clone https://github.com/entynetproject/geospy.git
 fi
 """)
 
-os.chdir("~/geospy")
+os.chdir(os.path.expanduser("~/geospy"))
 
 from core.utils import utils                  #
 from core.geospy import GeoSpy                #
