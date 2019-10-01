@@ -59,9 +59,6 @@ except:                                       ##################################
 # We generalize the main class of <GeoSpy>
 trackPeople = GeoSpy()
 
-def handlesignal(signum,frame):
-        sys.exit(0)
-
 # call class database
 generateData = Database()
 if generateData.firstTime:
