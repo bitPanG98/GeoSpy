@@ -85,6 +85,12 @@ chmod +x uninstall.sh
 ./uninstall.sh
 ```
 
+* **EXECUTION**
+
+```
+geospy -h
+```
+
 * **USAGE**
 
 ```
