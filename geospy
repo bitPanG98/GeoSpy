@@ -44,6 +44,9 @@
 ###############################################
                                               #
 import os                                     #
+                                              #
+os.system("printf '\033]2;GeoSpy Console\a'") #
+                                              #
 from core.utils import utils                  #
 from core.geospy import GeoSpy                #
 from core.db import Database                  #
