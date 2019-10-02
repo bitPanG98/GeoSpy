@@ -88,8 +88,8 @@ chmod +x uninstall.sh
 * **USAGE**
 
 ```
-usage: geospy -u URL -p PORT [-h] [-v] [-u URL] [-p PORT] [-ak ACCESSKEY] 
-                             [-l LOCAL] [-n] [-ic INJC] [-ud]
+usage: geospy [-h] [-v] [-u URL] [-p PORT] [-ak ACCESSKEY] [-l LOCAL] [-n] 
+              [-ic INJC] [-ud]
 
 optional arguments:
   -h, --help            show this help message and exit
