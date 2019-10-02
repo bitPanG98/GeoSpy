@@ -41,7 +41,7 @@ then
 {
 cd ~/geospy
 } &> /dev/null
-python geospy.py $1 $2 $3 $4 $5 $6 $7 $8 $9
+python src/geospy $1 $2 $3 $4 $5 $6 $7 $8 $9
 else
 {
 ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
@@ -53,7 +53,7 @@ cd ~
 git clone https://github.com/entynetproject/geospy.git
 cd ~/geospy
 } &> /dev/null
-python geospy.py $1 $2 $3 $4 $5 $6 $7 $8 $9
+python src/geospy $1 $2 $3 $4 $5 $6 $7 $8 $9
 else
 cd ~
 sleep 1
