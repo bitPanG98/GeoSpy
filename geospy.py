@@ -43,22 +43,7 @@
 #
 ###############################################
                                               #
-import os
-
-os.system("""
-if [[ -d ~/geospy ]]
-then
-sleep 0
-else
-cd ~
-{
-git clone https://github.com/entynetproject/geospy.git
-} &> /dev/null
-fi
-""")
-
-os.chdir(os.path.expanduser("~/geospy"))
-
+import os                                     #
 from core.utils import utils                  #
 from core.geospy import GeoSpy                #
 from core.db import Database                  #
