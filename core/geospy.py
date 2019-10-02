@@ -72,7 +72,7 @@ class GeoSpy(object):
 			if self.googl == '':
 				self.googl = 'AIzaSyDHMDTOGo9L1OBl5vRxOVM6vpXOXVp5jCc'
 			
-			parser = argparse.ArgumentParser("geospy -u URL -p PORT", version=self.version)
+			parser = argparse.ArgumentParser()
 			parser.add_argument('-u', '--url', dest='url', help='Put the web page URL to clone.')
 			parser.add_argument('-p', '--port', dest='port', help='Insert your port.')
 			parser.add_argument('-ak', '--accesskey', dest='accesskey', help='Insert your custom Access Key.')
