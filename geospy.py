@@ -41,20 +41,20 @@
 #
 #**
 #
-###############################################
-                                              #
-import os                                     #
-                                              #
-print "\033]2;Geolocation Spy\a"              #
-                                              #
-from core.utils import utils                  #
-from core.geospy import GeoSpy                #
-from core.db import Database                  #
-from time import sleep                        #                  
-try:                                          #
-    import flask                              #
-    import flask_socketio                     #                                
-except:                                       ############################################
+################################################
+                                               #
+import os                                      #
+                                               #
+os.system("printf '\033]2;Geolocation Spy\a'") #
+                                               #
+from core.utils import utils                   #
+from core.geospy import GeoSpy                 #
+from core.db import Database                   #
+from time import sleep                         #                  
+try:                                           #
+    import flask                               #
+    import flask_socketio                      #                                
+except:                                        ############################################
     utils.Go("\t\nPlease install requirements.txt libraries, you can do it executing:")  #
     utils.Go("\t\npip install -r requirements.txt")  #####################################
 ######################################################
