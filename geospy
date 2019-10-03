@@ -45,7 +45,7 @@
                                               #
 import os                                     #
                                               #
-print '\033]2;GeoSpy Console\a'               #
+print "\033]2;Geolocation Spy\a"              #
                                               #
 from core.utils import utils                  #
 from core.geospy import GeoSpy                #
