@@ -22,8 +22,6 @@
 # may have through this project. We are totally convinced that if we teach how 
 # vulnerable things really are, we can make the Internet a safer place.
 
-printf '\033]2;GeoSpy Console\a'
-
 #blue start 
 	BS="-e \033[1;34m"
 #color end
@@ -34,6 +32,8 @@ printf '\033]2;GeoSpy Console\a'
 	GNS="-e \033[1;32m"
 #white start
   WHS="\033[0;97m"
+
+printf '\033]2;Geolocation Spy\a'
 
 cd ~
 if [[ -d ~/geospy ]]
