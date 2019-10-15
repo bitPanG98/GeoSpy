@@ -22,21 +22,14 @@
 # may have through this project. We are totally convinced that if we teach how 
 # vulnerable things really are, we can make the Internet a safer place.
 
-RSA="\033[31m"
-YSA="\033[1;93m"
-CEA="\033[0m"
-WHS="\033[0;97m"
+RS="\033[1;31m"
+YS="\033[1;33m"
+CE="\033[0m"
 
-WHO="$( whoami )"
-
-if [[ "$WHO" != "root" ]]
+if [[ $EUID -ne 0 ]]
 then
-sleep 1
-echo -e "$RS"run it as"$CE" "$YS"root"$CE"
-sleep 1
-echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
-sleep 1
-exit
+   echo "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$C"" 1>&2
+   exit
 fi
 
 if [[ -d ~/geospy ]]
