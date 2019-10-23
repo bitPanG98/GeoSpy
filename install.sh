@@ -112,10 +112,7 @@ chmod +x /bin/geospy
 } &> /dev/null
 fi
 sleep 0.5
-echo "\033[1;31m"
-cd ~/geospy
-cat banner/banner.txt
-echo "\033[0m"
+python3 banner/banner.py
 
 if [[ -f /etc/geospy.conf ]]
 then
