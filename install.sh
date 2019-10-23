@@ -25,11 +25,12 @@
 RS="\033[1;31m"
 YS="\033[1;33m"
 CE="\033[0m"
+GNS="-e \033[92m"
 
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "["$RSA"*"$CE"] "$RSA"This script must be run as "$YSA"root"$CE""
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE""
    sleep 1
    exit
 fi
