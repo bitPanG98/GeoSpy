@@ -105,14 +105,14 @@ fi
 fi
 
 else
-read -e -p $'\033[34m- \033[0mSelect your architecture (amd/intel/arm) \033[33m~> ' CONF
+read -e -p $'\033[1;34m- \033[0mSelect your architecture (amd/intel/arm) \033[33m~> \033[0m' CONF
 if [[ "$CONF" = "" ]]
 then
 exit
 else
 if [[ "$CONF" = "arm" ]]
 then
-read -e -p $'\033[34m- \033[0mIs this a single board computer (yes/no)? \033[33m~> ' PI
+read -e -p $'\033[1;34m- \033[0mIs this a single board computer (yes/no)? \033[33m~> \033[0m' PI
 if [[ "$PI" = "yes" ]]
 then
 echo "amd" >> /etc/geospy.conf
