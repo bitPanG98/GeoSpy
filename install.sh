@@ -105,7 +105,7 @@ fi
 fi
 
 else
-read -e -p $'\033[34m- \033[0mSelect your architecture (amd/intel/arm) \033[33m~> ' CONF
+read -e -p $'\033[1;34m- \033[0mSelect your architecture (amd/intel/arm) \033[1;33m~> ' CONF
 if [[ "$CONF" = "" ]]
 then
 exit
