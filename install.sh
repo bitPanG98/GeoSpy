@@ -73,8 +73,8 @@ echo ""$GNS"Installing dependencies..."$CE""
 else 
 echo ""$GNS"Installing dependencies..."$CE""
 pkg update
-pkg install python3
-pkg install python3-pip
+pkg install python
+pkg install python-pip
 fi
 fi
 
@@ -86,8 +86,8 @@ echo ""$GNS"Installing dependencies..."$CE""
 else
 echo ""$GNS"Installing dependencies..."$CE""
 apt-get update
-apt-get install python3
-apt-get install python3-pip
+apt-get install python
+apt-get install python-pip
 fi
 fi
 
@@ -99,8 +99,8 @@ echo ""$GNS"Installing dependencies..."$CE""
 else
 echo ""$GNS"Installing dependencies..."$CE""
 apt-get update
-apt-get install python3
-apt-get install python3-pip
+apt-get install python
+apt-get install python-pip
 fi
 fi
 
@@ -132,8 +132,8 @@ echo ""$GNS"Installing dependencies..."$CE""
 else 
 echo ""$GNS"Installing dependencies..."$CE""
 pkg update
-pkg install python3
-pkg install python3-pip
+pkg install python
+pkg install python-pip
 fi
 fi
 
@@ -145,8 +145,8 @@ echo ""$GNS"Installing dependencies..."$CE""
 else
 echo ""$GNS"Installing dependencies..."$CE""
 apt-get update
-apt-get install python3
-apt-get install python3-pip
+apt-get install python
+apt-get install python-pip
 fi
 fi
 
@@ -158,8 +158,8 @@ echo ""$GNS"Installing dependencies..."$CE""
 else
 echo ""$GNS"Installing dependencies..."$CE""
 apt-get update
-apt-get install python3
-apt-get install python3-pip
+apt-get install python
+apt-get install python-pip
 fi
 fi
 fi
