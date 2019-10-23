@@ -113,7 +113,7 @@ chmod +x /bin/geospy
 fi
 sleep 0.5
 cd ~/geospy
-python3 banner.py
+python banner.py
 
 if [[ -f /etc/geospy.conf ]]
 then
