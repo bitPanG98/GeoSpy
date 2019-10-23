@@ -165,5 +165,6 @@ fi
 fi
 
 {
+pip install setuptools
 pip install -r requirements.txt
 } &> /dev/null
