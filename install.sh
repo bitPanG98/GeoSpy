@@ -43,6 +43,8 @@ cp geospy /usr/local/bin
 chmod +x /usr/local/bin/geospy
 cp geospy /bin
 chmod +x /bin/geospy
+cp geospy /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/geospy
 } &> /dev/null
 else
 cd ~
@@ -53,6 +55,8 @@ cp geospy /usr/local/bin
 chmod +x /usr/local/bin/geospy
 cp geospy /bin
 chmod +x /bin/geospy
+cp geospy /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/geospy
 } &> /dev/null
 fi
 sleep 0.5
