@@ -1,4 +1,5 @@
 import os
+from colorama import init , Style,Fore
 
 Color = {
       "cyan": Style.NORMAL+Fore.CYAN,
@@ -16,12 +17,12 @@ Color = {
 }
 
 print("\033[H\033[J")
-print(redBold)
+print(banner.Color['redBold'])
 os.system("cat banner/banner.txt")
 print("")
-print("\t" + Color.['redBold'] + "Geolocation Spy" + white + " by " + whiteBold + "Entynetproject" + white + "" + blue + "" + white + "" + white)
+print("\t" + banner.Color['redBold'] + "Geolocation Spy" + banner.Color['white'] + " by " + banner.Color['whiteBold'] + "Entynetproject" + banner.Color['white'] + "" + banner.Color['blue'] + "" + banner.Color['white'] + "" + banner.Color['white'])
 print("\t" + "-------------------------------------------------")
-print("\t" + "|" + green + " People tracker on internet for OSINT research " + white + "|" + white)
+print("\t" + "|" + banner.Color['green'] + " People tracker on internet for OSINT research " + banner.Color['white'] + "|" + banner.Color['white'])
 print("\t" + "-------------------------------------------------")
-print("\t" + "| " + white + "v" + redBold + "2.0" + white + " |")    
+print("\t" + "| " + banner.Color['white'] + "v" + banner.Color['redBold'] + "2.0" + banner.Color['white'] + " |")    
 print("\t" + "--------" + "\n")
