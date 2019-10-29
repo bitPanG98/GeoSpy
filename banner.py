@@ -1,2 +1,2 @@
-from core.utils import utils
-utils.banner()
+from core.banner import banner
+banner.banner()
