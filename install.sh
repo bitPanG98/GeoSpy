@@ -61,7 +61,8 @@ chmod +x /data/data/com.termux/files/usr/bin/geospy
 fi
 sleep 0.5
 cd ~/geospy
-python banner.py
+chmod +x banner/banner.sh
+banner/banner.sh
 
 if [[ -f /etc/geospy.conf ]]
 then
