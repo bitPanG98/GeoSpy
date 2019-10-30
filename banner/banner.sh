@@ -11,9 +11,9 @@
         echo -e "$redBold"
         cat banner/banner.txt
         echo -e 
-        echo -e ""\t"$redBold"Geolocation Spy"$white" by "$whiteBold"Entynetproject"$white""
+        echo -e "\t"$redBold"Geolocation Spy"$white" by "$whiteBold"Entynetproject"$white""
         echo -e "\t-------------------------------------------------"
-        echo -e ""\t|"$green" People tracker on internet for OSINT research "$white"|"$white""
+        echo -e "\t|"$green" People tracker on internet for OSINT research "$white"|"$white""
         echo -e "\t-------------------------------------------------"
-        echo -e ""\t| "$white"v"$redBold"2.0"$white" |"  
+        echo -e "\t| "$white"v"$redBold"2.0"$white" |"  
         echo -e "\t--------\n"
