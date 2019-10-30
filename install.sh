@@ -125,6 +125,8 @@ CONF="amd"
 else
 echo "$CONF" >> /etc/geospy.conf
 fi
+else
+echo "$CONF" >> /etc/geospy.conf
 fi
 fi
 sleep 1
