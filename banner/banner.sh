@@ -1,3 +1,5 @@
+#!/bin/bash
+
       blue="\033[0;34m"
       blueBold="\033[1;34m"
       red="\033[0;31m"
