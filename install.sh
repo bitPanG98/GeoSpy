@@ -78,7 +78,7 @@ echo ""$GNS"Installing dependencies..."$CE""
 else 
 echo ""$GNS"Installing dependencies..."$CE""
 pkg update
-pkg -y install python2
+pkg -y install python
 pkg -y install python-pip
 fi
 fi
@@ -91,7 +91,7 @@ echo ""$GNS"Installing dependencies..."$CE""
 else
 echo ""$GNS"Installing dependencies..."$CE""
 apt-get update
-apt-get -y install python2
+apt-get -y install python
 apt-get -y install python-pip
 fi
 fi
@@ -104,7 +104,7 @@ echo ""$GNS"Installing dependencies..."$CE""
 else
 echo ""$GNS"Installing dependencies..."$CE""
 apt-get update
-apt-get -y install python2
+apt-get -y install python
 apt-get -y install python-pip
 fi
 fi
@@ -139,7 +139,7 @@ echo ""$GNS"Installing dependencies..."$CE""
 else 
 echo ""$GNS"Installing dependencies..."$CE""
 pkg update
-pkg -y install python2
+pkg -y install python
 pkg -y install python-pip
 fi
 fi
@@ -152,7 +152,7 @@ echo ""$GNS"Installing dependencies..."$CE""
 else
 echo ""$GNS"Installing dependencies..."$CE""
 apt-get update
-apt-get -y install python2
+apt-get -y install python
 apt-get -y install python-pip
 fi
 fi
@@ -165,7 +165,7 @@ echo ""$GNS"Installing dependencies..."$CE""
 else
 echo ""$GNS"Installing dependencies..."$CE""
 apt-get update
-apt-get -y install python2
+apt-get -y install python
 apt-get -y install python-pip
 fi
 fi
