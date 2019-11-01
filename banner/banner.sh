@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 
       blue="\033[0;34m"
       blueBold="\033[1;34m"
