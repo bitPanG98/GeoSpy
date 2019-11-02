@@ -37,26 +37,11 @@ fi
 
 if [[ -d ~/geospy ]]
 then
-cd ~/geospy/bin
-{
-cp geospy /usr/local/bin
-chmod +x /usr/local/bin/geospy
-cp geospy /bin
-chmod +x /bin/geospy
-cp geospy /data/data/com.termux/files/usr/bin
-chmod +x /data/data/com.termux/files/usr/bin/geospy
-} &> /dev/null
+sleep 0
 else
 cd ~
 {
 git clone https://github.com/entynetproject/geospy.git
-cd ~/geospy/bin
-cp geospy /usr/local/bin
-chmod +x /usr/local/bin/geospy
-cp geospy /bin
-chmod +x /bin/geospy
-cp geospy /data/data/com.termux/files/usr/bin
-chmod +x /data/data/com.termux/files/usr/bin/geospy
 } &> /dev/null
 fi
 sleep 0.5
@@ -202,4 +187,14 @@ fi
 {
 pip install setuptools
 pip install -r requirements.txt
+} &> /dev/null
+
+{
+cd ~/geospy/bin
+cp geospy /usr/local/bin
+chmod +x /usr/local/bin/geospy
+cp geospy /bin
+chmod +x /bin/geospy
+cp geospy /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/geospy
 } &> /dev/null
