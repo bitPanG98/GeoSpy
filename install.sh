@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # Copyright (C) 2016 - 2018 Entynetproject
 #
