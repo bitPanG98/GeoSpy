@@ -83,8 +83,8 @@ fi
 else 
 echo ""$GNS"Installing dependencies..."$CE""
 pkg update
+pkg upgrade
 pkg -y install python
-pkg -y install python-pip
 fi
 fi
 
@@ -159,8 +159,8 @@ fi
 else 
 echo ""$GNS"Installing dependencies..."$CE""
 pkg update
+pkg upgrade
 pkg -y install python
-pkg -y install python-pip
 fi
 fi
 
