@@ -26,6 +26,7 @@ RS="\033[1;31m"
 YS="\033[1;33m"
 CE="\033[0m"
 GNS="-e \033[32m"
+GNSB="-e \033[1;32m"
 
 if [[ $EUID -ne 0 ]]
 then
@@ -59,14 +60,14 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 {
 if ! which pip > /dev/null; then
 	curl https://bootstrap.pypa.io/get-pip.py | python
 fi
 } &> /dev/null
 else 
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 pkg update
 pkg -y install python
 fi
@@ -76,14 +77,14 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 {
 if ! which pip > /dev/null; then
 	curl https://bootstrap.pypa.io/get-pip.py | python
 fi
 } &> /dev/null
 else
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 apt-get update
 apt-get -y install python
 apt-get -y install python-pip
@@ -94,14 +95,14 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 {
 if ! which pip > /dev/null; then
 	curl https://bootstrap.pypa.io/get-pip.py | python
 fi
 } &> /dev/null
 else
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 apt-get update
 apt-get -y install python
 apt-get -y install python-pip
@@ -134,14 +135,14 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 {
 if ! which pip > /dev/null; then
 	curl https://bootstrap.pypa.io/get-pip.py | python
 fi
 } &> /dev/null
 else 
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 pkg update
 pkg -y install python
 fi
@@ -151,14 +152,14 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 {
 if ! which pip > /dev/null; then
 	curl https://bootstrap.pypa.io/get-pip.py | python
 fi
 } &> /dev/null
 else
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 apt-get update
 apt-get -y install python
 apt-get -y install python-pip
@@ -169,14 +170,14 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 {
 if ! which pip > /dev/null; then
 	curl https://bootstrap.pypa.io/get-pip.py | python
 fi
 } &> /dev/null
 else
-echo ""$GNS"Installing dependencies..."$CE""
+echo "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 apt-get update
 apt-get -y install python
 apt-get -y install python-pip
