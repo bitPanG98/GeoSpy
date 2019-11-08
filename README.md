@@ -2,7 +2,6 @@ Geolocation Spy (GeoSpy)
 ========
 
 <h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/65831192-89cc2880-e2bf-11e9-936c-792dcf56407c.png"></h3>
-<p align="center">People tracker on the Internet</p>
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
