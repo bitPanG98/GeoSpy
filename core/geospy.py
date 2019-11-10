@@ -53,7 +53,7 @@ class GeoSpy(object):
 			except Exception as e:
 				c.close()
 				utils.Go("\033[H\033[J")
-				utils.Go(utils.Color['whiteBold'] + "[" + utils.Color['redBold'] + "x" + utils.Color['whiteBold'] + "]" + utils.Color['redBold'] + " " + "NOTICE: " + utils.Color['white'] + "GeoSpy needs Internet connection for working" + "\n\t")
+				utils.Go(utils.Color['whiteBold'] + "[" + utils.Color['redBold'] + "x" + utils.Color['whiteBold'] + "]" + utils.Color['redBold'] + " " + "NOTICE: " + utils.Color['white'] + "GeoSpy needs Internet connection for working." + "\n\t")
 				sys.exit(0)
 
 			if (not(os.path.exists("GeoSpy.config"))):
