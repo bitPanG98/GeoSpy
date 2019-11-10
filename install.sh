@@ -27,11 +27,13 @@ YS="\033[1;33m"
 CE="\033[0m"
 GNS="-e \033[32m"
 GNSB="-e \033[1;32m"
+WSW="\033[0;77m"
+WS="\033[1;77m"
 
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE""
+   echo -e ""$WS"["$RS"x"$WS"] "$RS"ERROR: "$WSW"This script must be run as root!"
    sleep 1
    exit
 fi
