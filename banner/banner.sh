@@ -6,7 +6,7 @@ clear
       red="\033[0;31m"
       redBold="\033[1;31m"
       green="\033[0;32m"
-      white="\033[0;77m"
+      white="\033[0m"
       whiteBold="\033[1;77m"
 
         echo -e "$redBold"
