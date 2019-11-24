@@ -103,8 +103,6 @@ optional arguments:
   -p PORT, --port PORT  Insert your port.
   -ak ACCESSKEY, --accesskey ACCESSKEY
                         Insert your custom Access Key.
-  -l LOCAL, --local LOCAL
-                        Insert your home file.
   -n, --ngrok           Insert your ngrok Authtoken.
   -ic INJC, --injectcode INJC
                         Insert your custom REST API path.
