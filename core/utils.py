@@ -59,7 +59,7 @@ class utils:
     # Banner GeoSpy
     @staticmethod
     def banner():
-        utils.Go("\033[H\033[J")
+        #utils.Go("\033[H\033[J")
         utils.Go(utils.Color['redBold'])
         os.system("cat banner/banner.txt")
         print("")
