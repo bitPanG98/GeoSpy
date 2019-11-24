@@ -64,7 +64,7 @@ class utils:
         file = open("banner/banner.txt").read()
         #utils.Go("\033[H\033[J")
         utils.Go(utils.Color['redBold'] + file)
-        print("")
+        #print("")
         utils.Go("\t" + utils.Color['redBold'] + "Geolocation Spy" + utils.Color['white'] + " by " + utils.Color['whiteBold'] + "Entynetproject" + utils.Color['white'] + "" + utils.Color['blue'] + "" + utils.Color['white'] + "" + utils.Color['white'])
         utils.Go("\t" + "-------------------------------------------------")
         utils.Go("\t" + "|" + utils.Color['green'] + " People tracker on internet for OSINT research " + utils.Color['white'] + "|" + utils.Color['white'])
