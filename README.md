@@ -129,7 +129,7 @@ optional arguments:
 * **EXAMPLE**
 
 ```
-geospy --url http://example.com --port 80
+geospy --url http://example.com --port 8080
 ```
 
 ***
