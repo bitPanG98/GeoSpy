@@ -134,14 +134,13 @@ geospy --url http://example.com --port 8080
 
 ***
 
-Disclaimer
+Geolocation spy disclaimer
 -------
-This tool has been published educational purposes. It is intended to teach people how bad guys could track them, monitor them or obtain information from their credentials, we are not responsible for the use or the scope that someone may have through this project.
-We are totally convinced that if we teach how vulnerable things really are, we can make the Internet a safer place.
+Usage of the Geolocation Spy for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, federal, and international laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 ***
 
-GeoSpy apache license
+Geolocation spy license
 -------
 
     Copyright (C) 2016 - 2018 Entynetproject
@@ -158,13 +157,6 @@ GeoSpy apache license
     WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
     License for the specific language governing permissions and limitations under
     the License.
-
-    Disclaimer:
-    This tool has been published educational purposes. It is intended to teach 
-    people how bad guys could track them, monitor them or obtain information from 
-    their credentials, we are not responsible for the use or the scope that someone 
-    may have through this project. We are totally convinced that if we teach how 
-    vulnerable things really are, we can make the Internet a safer place.
 
 ***
 
