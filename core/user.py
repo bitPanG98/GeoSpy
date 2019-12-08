@@ -1,16 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#**
-#
-#########
-# GeoSpy #
-#########
-#
-# GeoSpy depends of this file
-# For full copyright information this visit: https://github.com/entynetproject/geospy
-#
-# Copyright 2018 by Entynetproject / <entynetproject@gmail.com>
-#**
+
 import time
 from core.dependence import urllib2
 from flask import Flask, render_template, session, request, json, Response
