@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#
+
 # Copyright (C) 2016 - 2018 Entynetproject
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -15,12 +15,10 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations under
 # the License.
-#
-#**
-#
-##########################################
+
+###########################################
 # GeoSpy | People tracker on the Internet #
-##########################################
+###########################################
 #
 # Learn to track the world, to avoid being traced
 #
@@ -31,8 +29,6 @@
 #
 # This file is the boot in GeoSpy.
 # For full copyright information this visit: https://github.com/entynetproject/geospy
-#
-#**
 #
 ################################################
                                                #
@@ -47,10 +43,11 @@ from time import sleep                         #
 try:                                           #
     import flask                               #
     import flask_socketio                      #                                
-except:                                        ############################################
-    utils.Go("\t\nPlease install requirements.txt libraries, you can do it executing:")  #
-    utils.Go("\t\npip install -r requirements.txt")  #####################################
-######################################################
+except:                                        #
+    utils.Go(utils.Color['whiteBold'] + "[" + utils.Color['redBold'] + "x" + utils.Color['whiteBold'] + "]" + utils.Color['redBold'] + " " + "ERROR: " + utils.Color['white'] + "Missing some necessary dependencies!")
+    import sys
+    sys.exit()
+################################################
 
 # We generalize the main class of <GeoSpy>
 trackPeople = GeoSpy()
