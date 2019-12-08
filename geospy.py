@@ -15,39 +15,22 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations under
 # the License.
-
-###########################################
-# GeoSpy | People tracker on the Internet #
-###########################################
-#
-# Learn to track the world, to avoid being traced
-#
-# @version     2.0
-# @link        https://github.com/entynetproject/geospy
-# @author      Entynetproject
-# @copyright   2018 by Entynetproject / <entynetproject@gmail.com>
-#
-# This file is the boot in GeoSpy.
-# For full copyright information this visit: https://github.com/entynetproject/geospy
-#
-################################################
-                                               #
-import os                                      #
-                                               #
-os.system("printf '\033]2;Geolocation Spy\a'") #
-                                               #
-from core.utils import utils                   #
-from core.geospy import GeoSpy                 #
-from core.db import Database                   #
-from time import sleep                         #                  
-try:                                           #
-    import flask                               #
-    import flask_socketio                      #                                
-except:                                        #
+                                 
+import os                                      
+                                               
+os.system("printf '\033]2;Geolocation Spy\a'") 
+                                             
+from core.utils import utils                   
+from core.geospy import GeoSpy                 
+from core.db import Database                   
+from time import sleep                                      
+try:                                           
+    import flask                               
+    import flask_socketio                                                
+except:                                        
     utils.Go(utils.Color['whiteBold'] + "[" + utils.Color['redBold'] + "x" + utils.Color['whiteBold'] + "]" + utils.Color['redBold'] + " " + "ERROR: " + utils.Color['white'] + "Missing some necessary dependencies!")
     import sys
     sys.exit()
-################################################
 
 # We generalize the main class of <GeoSpy>
 trackPeople = GeoSpy()
