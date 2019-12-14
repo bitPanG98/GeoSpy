@@ -34,9 +34,8 @@ then
 {
 cd ~/geospy
 } &> /dev/null
-mv geospy.py geospy
-python geospy $1 $2 $3 $4 $5 $6 $7 $8 $9
-mv geospy geospy.py
+chmod +x geospy
+./geospy $1 $2 $3 $4 $5 $6 $7 $8 $9
 else
 {
 ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
@@ -48,9 +47,8 @@ cd ~
 git clone https://github.com/entynetproject/geospy.git
 cd ~/geospy
 } &> /dev/null
-mv geospy.py geospy
-python geospy $1 $2 $3 $4 $5 $6 $7 $8 $9
-mv geospy geospy.py
+chmod +x geospy
+./geospy $1 $2 $3 $4 $5 $6 $7 $8 $9
 else
 cd ~
 sleep 1
