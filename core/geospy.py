@@ -69,7 +69,7 @@ class GeoSpy(object):
 			parser.add_argument('-n', '--ngrok', dest='ngrok', help='Insert your ngrok Authtoken.', action='store_true')
 			parser.add_argument('-ic', '--injectcode', dest='injc', help='Insert your custom REST API path.')
 			parser.add_argument('-ud', '--update', action='store_true', default=False, help='Update GeoSpy to the latest version.')
-
+			print("")
 			options = parser.parse_args()
 
 			self.type_lure = 'global'
