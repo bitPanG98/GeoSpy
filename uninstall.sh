@@ -24,7 +24,7 @@ WS="\033[1;77m"
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e ""$WS"["$RS"x"$WS"] "$RS"ERROR: "$WSW"This script must be run as root!"
+   echo -e ""$WS"["$RS"x"$WS"] "$RS"ERROR: "$WSW"This script must be run as root!"$CE""
    sleep 1
    exit
 fi
