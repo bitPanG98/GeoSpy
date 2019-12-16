@@ -40,145 +40,27 @@ cd ~
 git clone https://github.com/entynetproject/geospy.git
 } &> /dev/null
 fi
+
 sleep 0.5
 cd ~/geospy
 chmod +x banner/banner.sh
 banner/banner.sh
 
-if [[ -f /etc/geospy.conf ]]
-then
-
-CONF="$( cat /etc/geospy.conf )"
+sleep 1
+echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 sleep 1
 
-if [[ "$CONF" = "arm" ]]
-then
-if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
-then
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 {
-if ! which pip > /dev/null; then
-	curl https://bootstrap.pypa.io/get-pip.py | python
-fi
-} &> /dev/null
-else 
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 pkg update
 pkg -y install python
-fi
-fi
-
-if [[ "$CONF" = "amd" ]]
-then
-if [[ -d /System/Library/CoreServices/Finder.app ]]
-then
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
-{
-if ! which pip > /dev/null; then
-	curl https://bootstrap.pypa.io/get-pip.py | python
-fi
-} &> /dev/null
-else
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
 apt-get update
 apt-get -y install python
 apt-get -y install python-pip
-fi
-fi
-
-if [[ "$CONF" = "intel" ]]
-then
-if [[ -d /System/Library/CoreServices/Finder.app ]]
-then
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
-{
-if ! which pip > /dev/null; then
-	curl https://bootstrap.pypa.io/get-pip.py | python
-fi
+apk add python
+apk add python-pip
+pacman -S python
+pacman -S python-pip
 } &> /dev/null
-else
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
-apt-get update
-apt-get -y install python
-apt-get -y install python-pip
-fi
-fi
-
-else
-read -e -p $'\033[1;34m- \033[0mSelect your architecture (amd/intel/arm) \033[33m~> \033[0m' CONF
-if [[ "$CONF" = "" ]]
-then
-exit
-else
-if [[ "$CONF" = "arm" ]]
-then
-read -e -p $'\033[1;34m- \033[0mIs this a single board computer (yes/no)? \033[33m~> \033[0m' PI
-if [[ "$PI" = "yes" ]]
-then
-echo "amd" >> /etc/geospy.conf
-CONF="amd"
-else
-echo "$CONF" >> /etc/geospy.conf
-fi
-else
-echo "$CONF" >> /etc/geospy.conf
-fi
-fi
-sleep 1
-
-if [[ "$CONF" = "arm" ]]
-then
-if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
-then
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
-{
-if ! which pip > /dev/null; then
-	curl https://bootstrap.pypa.io/get-pip.py | python
-fi
-} &> /dev/null
-else 
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
-pkg update
-pkg -y install python
-fi
-fi
-
-if [[ "$CONF" = "amd" ]]
-then
-if [[ -d /System/Library/CoreServices/Finder.app ]]
-then
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
-{
-if ! which pip > /dev/null; then
-	curl https://bootstrap.pypa.io/get-pip.py | python
-fi
-} &> /dev/null
-else
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
-apt-get update
-apt-get -y install python
-apt-get -y install python-pip
-fi
-fi
-
-if [[ "$CONF" = "intel" ]]
-then
-if [[ -d /System/Library/CoreServices/Finder.app ]]
-then
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
-{
-if ! which pip > /dev/null; then
-	curl https://bootstrap.pypa.io/get-pip.py | python
-fi
-} &> /dev/null
-else
-echo -e "["$GNSB"i"$CE"] Installing dependencies..."$CE""
-apt-get update
-apt-get -y install python
-apt-get -y install python-pip
-fi
-fi
-fi
 
 {
 pip install setuptools
