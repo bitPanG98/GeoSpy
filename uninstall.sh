@@ -33,6 +33,5 @@ fi
 rm /bin/geospy
 rm /usr/local/bin/geospy
 rm -rf ~/geospy
-rm /etc/geospy.conf
 rm /data/data/com.termux/files/usr/bin/geospy
 } &> /dev/null
