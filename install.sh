@@ -58,8 +58,14 @@ apt-get -y install python
 apt-get -y install python-pip
 apk add python
 apk add python-pip
-pacman -S python
-pacman -S python-pip
+pacman -Sy
+yes | pacman -S python
+yes | pacman -S python-pip
+zypper refresh
+zypper install -y python
+zypper install -y python-pip
+yum -y install python
+yum -y install python-pip
 } &> /dev/null
 
 {
