@@ -57,7 +57,7 @@ apt-get update
 apt-get -y install python
 apt-get -y install python-pip
 apk add python
-apk add python-pip
+apk add py-pip
 pacman -Sy
 yes | pacman -S python
 yes | pacman -S python-pip
