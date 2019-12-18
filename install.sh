@@ -100,3 +100,7 @@ chmod +x /bin/geospy
 cp geospy /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/geospy
 } &> /dev/null
+
+sleep 1
+echo -e "["$GNSB"i"$CE"] Successfully installed!"$CE""
+sleep 1
