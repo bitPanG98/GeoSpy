@@ -53,19 +53,29 @@ sleep 1
 {
 pkg update
 pkg -y install python
-apt-get update
 apt-get -y install python
 apt-get -y install python-pip
+apk update
 apk add python
 apk add py-pip
 pacman -Sy
-yes | pacman -S python
-yes | pacman -S python-pip
+pacman -S --noconfirm python
+pacman -S --noconfirm python-pip
 zypper refresh
 zypper install -y python
 zypper install -y python-pip
 yum -y install python
 yum -y install python-pip
+dnf -y install python
+dnf -y install python-pip
+eopkg update-repo
+eopkg -y install python
+eopkg -y install pip
+xbps-install -S
+xbps-install -y python
+xbps-install -y python-pip
+nix-env -i python
+nix-env -i python2.7-bootstrapped-pip-19.2.3
 } &> /dev/null
 
 {
