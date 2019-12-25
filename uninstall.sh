@@ -21,6 +21,8 @@ CE="\033[0m"
 WSW="\033[0;77m"
 WS="\033[1;77m"
 
+printf '\033]2;uninstall.sh\a'
+
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
