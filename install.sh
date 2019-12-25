@@ -23,6 +23,8 @@ GNSB="\033[1;32m"
 WSW="\033[0;37m"
 WS="\033[1;37m"
 
+printf '\033]2;install.sh\a'
+
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
