@@ -81,7 +81,7 @@ optional arguments:
 
 ***
 
-Geolocation Spy license
+# Geolocation Spy license
 
     Copyright (C) 2016 - 2019 Entynetproject
 
@@ -100,4 +100,4 @@ Geolocation Spy license
 
 ***
 
-Thats all!
+# Thats all!
