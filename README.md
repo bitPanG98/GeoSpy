@@ -23,7 +23,7 @@
 
 # About Geolocation Spy
 
-    Geolocation Spy (GeoSpy) is an OSINT analysis and research tool that is used to track and execute 
+    INFO: Geolocation Spy (GeoSpy) is an OSINT analysis and research tool that is used to track and execute 
     intelligent social engineering attacks in real time. It was created with the aim of teaching the world 
     show large Internet companies could obtain confidential information such as the status of sessions of their 
     websites or services and control their users through their browser, without their knowlege, but It evolves 
