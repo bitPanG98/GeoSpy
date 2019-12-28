@@ -99,5 +99,3 @@ optional arguments:
     the License.
 
 ***
-
-# Thats all!
