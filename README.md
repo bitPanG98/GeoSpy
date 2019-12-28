@@ -1,5 +1,4 @@
-Geolocation Spy (GeoSpy)
-========
+# Geolocation Spy (GeoSpy)
 
 <h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/65831192-89cc2880-e2bf-11e9-936c-792dcf56407c.png"></h3>
 <p align="center">
@@ -20,77 +19,41 @@ Geolocation Spy (GeoSpy)
  </a>
 </p>
 
+***
 
+# About Geolocation Spy
 
----
-Geolocation Spy (GeoSpy) is an **OSINT** analysis and research tool that is used to track and execute intelligent **social engineering** attacks in real time. It was created with the aim of teaching the world how large Internet companies could obtain **confidential information** such as the status of sessions of their websites or services and control their users through their browser, without their knowlege, but It evolves with the aim of helping **government** organizations, companies and **researchers** to track the cybercriminals.
+    Geolocation Spy (GeoSpy) is an OSINT analysis and research tool that is used to track and execute 
+    intelligent social engineering attacks in real time. It was created with the aim of teaching the world 
+    show large Internet companies could obtain confidential information such as the status of sessions of their 
+    websites or services and control their users through their browser, without their knowlege, but It evolves 
+    with the aim of helping government organizations, companies and researchers to track the cybercriminals.
 
 ***
 
-Some benefits
------------
-* **LOCATOR OPTIMIZATION** Trace the path between you and the target you're tracking. Each time you make a move, the path will be updated, the location of the target is obtained silently through a bypass made in the browsers, allowing you to skip the location request on the victim's side, and at the same time maintain a precision of **99%** in the locator.
+# Getting started
 
-* **APPROACH** When you're close to the target, GeoSpy will tell you.
+## GeoSpy installation
 
-* **REST API** Generates an API (random or custom), and through this you can control and monitor other Web sites on the Internet remotely, getting the traffic of all visitors.
+> cd geospy
 
-* **PROCESS HOOKS** Manages social engineering attacks or processes in the target's browser.
-    
-* **SEVERAL** You can issue a phishing attack of any domain or service in real time as well as send malicious files to compromise the device of a target.
-    
-* **INJECT JS** You keep the JavaScript code running free in real time, so you can manage the execution of a **keylogger** or your own custom functions in JS which will be reflected in the target's browser.
-    
-* **SPEECH** A process of audio creation is maintained which is played in the browser of the target, by means of this you can execute personalized messages in different voices with languages in Spanish and English.
+> chmod +x install.sh
 
-* **PUBLIC NETWORK TUNNEL** GeoSpy has its own **API** that is linked to **ngrok.com** to allow the automatic management of public network tunnels. So you can publish the content of your GeoSpy server which is executed locally to the Internet, to manage hooks or public attacks.
+> ./install.sh
 
-* **CLICK ATTACK TO GET CREDENTIALS** Automatically obtains the target credentials, recognizing your connection availability on a social network or Internet service.
+## GeoSpy uninstallation
 
-* **NETWORK** You can get information about the user's network.
+> cd geospy
 
-* **SPEED** Viewing the target's network speed. (Ping, download, upload, type connection)
+> chmod +x uninstall.sh
 
-* **HOSTS OR DEVICES** Here you can get a scan of all the devices that are connected in the target network automatically.
-
-* **PROFILE** Brief summary of the target's behavior and important additional information about your device.
+> ./uninstall.sh
 
 ***
 
-30 sessions recognition
--------
-Session recognition is one of GeoSpy most interesting attractions, since you as a researcher can know remotely what service the target is connected to.
+# Geolocation Spy execution
 
-* **USABILITY** You can delete logs and view alerts for each process or action you run against each target.
-
-***
-
-Getting started
--------
-
-* **INSTALLATION**
-
-```
-cd geospy
-chmod +x install.sh
-./install.sh
-```
-
-* **UNINSTALLATION**
-
-```
-cd geospy
-chmod +x uninstall.sh
-./uninstall.sh
-```
-
-* **EXECUTION**
-
-```
-geospy -h
-```
-
-* **USAGE**
+> geospy -h
 
 ```
 usage: geospy [-h] [-v] [-u URL] [-p PORT] [-ak ACCESSKEY] [-l LOCAL] [-n] 
@@ -108,40 +71,17 @@ optional arguments:
   -ud, --update         Update GeoSpy to the latest version.
 ```
 
-   **--url**  In this option you add the URL you want to clone, which works as a decoy.
+***
 
-   **--port**  Here you insert the port, where you are going to run the  **GeoSpy Server**.
+# Geolocation Spy disclaimer
 
-   **--accesskey**  You enter a custom key for the  **GeoSpy Panel**, if you do not insert it will generate an  **automatic key**.
-
-   **--injectcode**  GeoSpy contains a  **REST API**  to play anywhere, using this option you can customize the name of the file to include, if it does not, generates a random name allusive to a token.
-
-   **--local**  Using this option you can call a local **HTML file**, this is the replacement of the  **--url**  option made to run a local link in GeoSpy.
-
-   **--ngrok**  In this option you can enter a token, to run at the time of a process. This would replace the token saved in configurations.
-
-   **--version**  You can see the version number of GeoSpy.
-
-   **--update**  Option used to upgrade to the latest version of GeoSpy.
-
-   **--help**  It is used to see all the above options, from the executable.
-
-* **EXAMPLE**
-
-```
-geospy --url http://example.com --port 8080
-```
+    INFO: Usage of the Geolocation Spy for attacking targets without prior mutual consent is illegal. 
+    It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
+    Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 ***
 
-Geolocation spy disclaimer
--------
-Usage of the Geolocation Spy for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, federal, and international laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
-
-***
-
-Geolocation spy license
--------
+Geolocation Spy license
 
     Copyright (C) 2016 - 2019 Entynetproject
 
@@ -161,4 +101,3 @@ Geolocation spy license
 ***
 
 Thats all!
--------
