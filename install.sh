@@ -96,8 +96,8 @@ xbps-install -y python-pip
 } &> /dev/null
 
 {
-pip install setuptools
-pip install -r requirements.txt
+python -m pip install setuptools
+python -m pip install -r requirements.txt
 } &> /dev/null
 
 {
