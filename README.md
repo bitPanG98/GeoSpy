@@ -86,7 +86,7 @@ optional arguments:
 ```
 MIT License
 
-Copyright (C) 2019, Entynetproject. All Rights Reserved.
+Copyright (C) 2019-2020, Entynetproject. All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
