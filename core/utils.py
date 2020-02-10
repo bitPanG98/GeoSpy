@@ -32,7 +32,7 @@ import socket
 import time
 import requests, json
 from colorama import init , Style,Fore
-import httplib 
+import http.client
 init()
 
 class utils:
@@ -148,7 +148,7 @@ class utils:
 
     @staticmethod
     def checkUrl(url):
-        c = httplib.HTTPConnection(url, timeout=5)
+        c = http.client.HTTPConnection(url, timeout=5)
         try:
             c.request("HEAD", "/")
             c.close()
