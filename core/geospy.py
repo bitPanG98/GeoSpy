@@ -43,7 +43,7 @@ class GeoSpy(object):
 	def __init__(self, stat = 0):
 		self.name_GeoSpy = "GeoSpy"
 		self.version = "2.0"
-		self.stats_path = "ngrok"
+		self.stats_path = utils.generateToken(7)
 		self.home_path = utils.generateToken(18)
 		self.logout_path = utils.generateToken(6)
 		self.remove_path = utils.generateToken(14)
