@@ -1,6 +1,7 @@
 # Geolocation Spy (GeoSpy)
 
-<h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/65831192-89cc2880-e2bf-11e9-936c-792dcf56407c.png"></h3>
+![geospy](https://user-images.githubusercontent.com/54115104/74142331-b39c4100-4c09-11ea-9f4a-b2b967105f79.jpeg)
+
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
