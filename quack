@@ -3,13 +3,10 @@
 import argparse
 #try:
 #	import tools.addons.update
-#	import tools.addons.clean
 #	import tools.addons.winpcap
 
 #except ImportError:
 #	print("Failed import some modules!")
-
-import tools.addons.logo
 
 def main():
 
@@ -33,6 +30,8 @@ def main():
 	target = args.target
 
 	if method == "NTP":
+		import tools.addons.clean
+		import tools.addons.logo
 		from tools.L4.ntp import NTP_ATTACK
 		NTP_ATTACK(threads, time, target)
 		
@@ -42,38 +41,56 @@ def main():
 		sys.exit()
 
 	elif method == "SYN":
+		import tools.addons.clean
+		import tools.addons.logo
 		from tools.L4.syn import SYN_ATTACK
 		SYN_ATTACK(threads, time, target)
 
 	elif method == "TCP":
+		import tools.addons.clean
+		import tools.addons.logo
 		from tools.L4.tcp import TCP_ATTACK
 		TCP_ATTACK(threads, time, target)
 
 	elif method == "POD":
+		import tools.addons.clean
+		import tools.addons.logo
 		from tools.L4.pod import POD_ATTACK
 		POD_ATTACK(threads, time, target)
 
 	elif method == "NJRAT":
+		import tools.addons.clean
+		import tools.addons.logo
 		from tools.L4.njrat import NJRAT_ATTACK
 		NJRAT_ATTACK(threads, time, target)
 
 	elif method == "UDP":
+		import tools.addons.clean
+		import tools.addons.logo
 		from tools.L4.udp import UDP_ATTACK
 		UDP_ATTACK(threads, time, target)
 
 	elif method == "HTTP":
+		import tools.addons.clean
+		import tools.addons.logo
 		from tools.L7.http import HTTP_ATTACK
 		HTTP_ATTACK(threads, time, target)
 
 	elif method == "SLOWLORIS":
+		import tools.addons.clean
+		import tools.addons.logo
 		from tools.L7.slowloris import SLOWLORIS_ATTACK
 		SLOWLORIS_ATTACK(threads, time, target)
 	
 	elif method == "MEMCACHED":
+		import tools.addons.clean	
+		import tools.addons.logo
 		from tools.L4.memcached import MEMCACHED_ATTACK
 		MEMCACHED_ATTACK(threads, time, target)
 
 	elif method == "SMS":
+		import tools.addons.clean
+		import tools.addons.logo
 		from tools.SMS.main import SMS_ATTACK
 		SMS_ATTACK(threads, time, target)
 
