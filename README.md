@@ -1,6 +1,6 @@
 # Geolocation Spy (GeoSpy)
 
-![geospy](https://user-images.githubusercontent.com/54115104/74142331-b39c4100-4c09-11ea-9f4a-b2b967105f79.jpeg)
+![geospy](https://user-images.githubusercontent.com/54115104/74229232-0857be80-4cd3-11ea-9724-28eea12e54a1.jpeg)
 
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
