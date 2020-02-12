@@ -36,7 +36,7 @@ def POD_ATTACK(threads, attack_time, target):
 
 	target_ip = target
 
-	print("\033[1;34m"+"[*]"+"\033[0m"+" Attack started for " + str(attack_time) + " seconds...")
+	print("\033[1;34m"+"[*]"+"\033[0m"+" Starting attack...")
 	
 	threads_list = []
 

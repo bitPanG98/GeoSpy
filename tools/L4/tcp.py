@@ -34,7 +34,7 @@ def TCP_ATTACK(threads, attack_time, target):
 	target_ip = target.split(":")[0]
 	target_port = int(target.split(":")[1])
 
-	print("\033[1;34m"+"[*]"+"\033[0m"+" Attack started for " + str(attack_time) + " seconds...")
+	print("\033[1;34m"+"[*]"+"\033[0m"+" Starting attack...")
 	
 
 	threads_list = []
@@ -66,7 +66,7 @@ def TCP_ATTACK(threads, attack_time, target):
 				time.sleep(0.25)
 				continue
 			else:
-				print("\033[1;32m"+"[+]"+"\033[0m"+" TCP random packet sent! Payload size: " + str(len(payload)))
+				print("\033[1;32m"+"[+]"+"\033[0m"+" TCP random packet sent! Payload size: " + str(len(payload)) + "...")
 
 	# Start threads
 	for thread in range(threads):
