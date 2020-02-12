@@ -106,7 +106,7 @@ class Service:
                 headers[key] = value
 
         # Create suffixes
-        okay  = "Service (" + getDomain(url) + ") >> Message sent!"
+        okay  = "Service (" + getDomain(url) + ") >> Message was sent!"
         error = "Service (" + getDomain(url) + ") >> Message was not sent."
 
         try:
