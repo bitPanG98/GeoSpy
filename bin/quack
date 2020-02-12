@@ -40,6 +40,10 @@ fi
 sleep 1
 echo "[BEGIN] Installing update..."
 {
+rm -rf ~/quack
+rm /bin/quack
+rm /usr/local/bin/quack
+rm /data/data/com.termux/files/usr/bin/quack
 cd ~
 git clone https://github.com/entynetproject/quack.git
 if [[ "$UPD" != "true" ]]
