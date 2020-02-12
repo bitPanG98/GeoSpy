@@ -39,5 +39,5 @@ def isCloudFlare(link):
 			if ipaddress.ip_address(origin) in ipaddress.ip_network(ipv4[i]):
 				return True
 	except socket.gaierror:
-		print("Unable to verify if victim's IP address belong to a CloudFlare\'s subnet")
+		print("\033[1;31m"+[-]+"\033[0m"+"Unable to verify if victim's IP address belong to a CloudFlare\'s subnet!")
 		return False
