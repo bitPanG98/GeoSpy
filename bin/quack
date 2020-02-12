@@ -89,7 +89,7 @@ chmod +x install.sh
 ./install.sh
 fi
 } &> /dev/null
-echo -e ""$WHS"[+]"$WS" Successfully updated!"$CE""
+echo -e ""$GNS"[+]"$WS" Successfully updated!"$CE""
 sleep 1
 exit
 fi
