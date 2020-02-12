@@ -41,7 +41,7 @@ def SMS_ATTACK(threads, attack_time, phone):
 	phone = number.normalize(phone)
 	# Get country name by phone
 	country = number.getCountry(phone)
-	print("\033[1;34m"+"[*]"+"\033[0m"+" Starting attack...")
+	print("\033[1;34m"+"[*]"+"\033[0m"+" Starting SMS attack...")
 
 	# Send SMS
 	def sms_flood():
