@@ -24,10 +24,22 @@
 
 printf '\033]2;install.sh\a'
 
+N="\033[1;37m"
+C="\033[0m"
+
+CE="\033[0m"
+RS="\033[1;31m"
+YS="\033[1;33m"
+BS="\033[1;34m"
+GNS="\033[1;32m"
+
+R="\033[1;31m"
+WS="\033[0m"
+
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "[ERROR] "$WHS"This script must be run as root!" 1>&2
+   echo -e ""$RS"[-] "$WS"This script must be run as root!"$CE"" 1>&2
    sleep 1
    exit
 fi
@@ -60,7 +72,7 @@ echo -e """
 echo
 
 sleep 1
-echo -e "[BEGIN] Installing dependencies..."
+echo -e ""$BS"[*]"$WS" Installing dependencies..."$CE""
 sleep 1
 
 {
@@ -115,5 +127,5 @@ chmod +x /data/data/com.termux/files/usr/bin/quack
 } &> /dev/null
 
 sleep 1
-echo "[SUCCESS] Successfully installed!"
+echo -e ""$GNS"[+]"$WS" Successfully installed!"$CE""
 sleep 1
