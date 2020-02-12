@@ -55,7 +55,7 @@ def UDP_ATTACK(threads, attack_time, target):
 			except Exception as e:
 				print(e)
 			else:
-				print("\033[1;32m"+"[+]"+"\033[0m"+" UDP payload was sent! Payload size: " + str(len(payload)) + ".")
+				print("\033[1;32m"+"[+]"+"\033[0m"+" UDP packet was sent! Packet size: " + str(len(payload)) + ".")
 
 	# Start threads
 	for thread in range(threads):
