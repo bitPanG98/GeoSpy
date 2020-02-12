@@ -29,7 +29,7 @@ def main():
 
 	# Parse args
 	parser = argparse.ArgumentParser()
-	parser.add_argument("--target", type = str, metavar = "<IP:PORT, URL, PHONE>",
+	parser.add_argument("--target", type = str, metavar = "<IP:port, URL, phone>",
 					help = "Target IP:port, URL or phone.")
 	parser.add_argument("--method", type = str, metavar = "[SMS|NTP|TCP|UDP|SYN|POD|SLOWLORIS|MEMCACHED|HTTP|NJRAT]",
 					help = "Attack method.")
