@@ -22,8 +22,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-printf '\033]2;uninstall.sh\a'
-
 N="\033[1;37m"
 C="\033[0m"
 
@@ -35,6 +33,8 @@ GNS="\033[1;32m"
 
 R="\033[1;31m"
 WS="\033[0m"
+
+printf '\033]2;uninstall.sh\a'
 
 if [[ $EUID -ne 0 ]]
 then
