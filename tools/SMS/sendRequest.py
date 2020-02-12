@@ -121,16 +121,16 @@ class Service:
 
             # Check status
             if r.status_code == 200:
-                print("[SUCCESS]" + okay)
+                print('\033[1;32'+"[+]"+'\033[0m'+ " " + okay)
             elif r.status_code == 429:
-                print("[TOO MANY REQUESTS]" + error)
+                print('\033[1;33'+"[!]"+'\033[0m'+" + error)
             else:
                 #print(r.text)
-                print("[" + str(r.status_code) + "]" + error)
+                print('\033[1;33'+"[!]"+'\033[0m'+"  + error)
             
             return r.status_code
 
         except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectTimeout):
-            print("[CONNECTION TIMED OUT]" + error)
+            print('\033[1;33'+"[!]"+'\033[0m'+" + error)
         except (requests.exceptions.ConnectionError):
-            print("[CONNECTION ERROR]" + error)
+            print('\033[1;33'+"[!]"+'\033[0m'+" + error)
