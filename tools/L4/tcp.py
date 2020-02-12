@@ -53,7 +53,7 @@ def TCP_ATTACK(threads, attack_time, target):
 				sock.connect((target_ip, target_port))
 			except Exception as e:
 				print(e)
-				print("[-] Failed to create TCP connection")
+				print("\033[1;31m"+"[-]"+"\033[0m"+" Failed to create TCP connection!")
 				exit()
 
 			# Send random payload
