@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
 
 import argparse
-#try:
-#	import tools.addons.update
-#	import tools.addons.winpcap
-
-#except ImportError:
-#	print("Failed import some modules!")
+import tools.addons.update
+import tools.addons.winpcap
 
 def main():
 
