@@ -64,7 +64,7 @@ usage: quack [-h] [--target <IP:PORT, URL, PHONE>]
 
 optional arguments:
   -h, --help            show this help message and exit
-  --target <IP:PORT, URL, PHONE>
+  --target <IP:port, URL, phone>
                         Target IP:port, URL or phone.
   --method [SMS|NTP|TCP|UDP|SYN|POD|SLOWLORIS|MEMCACHED|HTTP|NJRAT]
                         Attack method.
@@ -78,7 +78,15 @@ optional arguments:
 
 > Example of the SMS attack method
     
-    quack --method SMS --target +<phone> --time <time> --threads <threads>
+    quack --method SMS --target +11111111111 --time 10 --threads 10
+    
+> Example of the HTTP attack method
+
+    quack --method HTTP --target http://example.com/ --time 10 --threads 10
+    
+> Example of the TCP attack method
+
+    quack --method TCP --target 1.1.1.1:8080 --time 10 --threads 10
 
 ***
 
