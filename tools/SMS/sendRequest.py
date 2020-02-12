@@ -106,8 +106,8 @@ class Service:
                 headers[key] = value
 
         # Create suffixes
-        okay  = " Service (" + getDomain(url) + ") >> Message sent!"
-        error = " Service (" + getDomain(url) + ") >> Failed to sent message!"
+        okay  = "Service (" + getDomain(url) + ") >> Message sent!"
+        error = "Service (" + getDomain(url) + ") >> Failed to sent message!"
 
         try:
             # If data type is 'json'
@@ -121,16 +121,16 @@ class Service:
 
             # Check status
             if r.status_code == 200:
-                print('\033[1;32'+"[+]"+'\033[0m'+ " " + okay)
+                print("\033[1;32m"+"[+]"+"\033[0m"+ " " + okay)
             elif r.status_code == 429:
-                print('\033[1;33'+"[!]"+'\033[0m'+" + error)
+                print("\033[1;33m"+"[!]"+"\033[0m"+ " " + error)
             else:
                 #print(r.text)
-                print('\033[1;33'+"[!]"+'\033[0m'+"  + error)
+                print("\033[1;33m"+"[!]"+"\033[0m" + " " + error)
             
             return r.status_code
 
         except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectTimeout):
-            print('\033[1;33'+"[!]"+'\033[0m'+" + error)
+            print("\033[1;33m"+"[!]"+"\033[0m"+ " " + error)
         except (requests.exceptions.ConnectionError):
-            print('\033[1;33'+"[!]"+'\033[0m'+" + error)
+            print("\033[1;33m"+"[!]"+"\033[0m"+ " " + error)
