@@ -78,7 +78,7 @@ optional arguments:
 
 > Example of the SMS attack method
     
-    quack --method SMS --target +11111111111 --time 10 --threads 10
+    quack --method SMS --target 15554443333 --time 10 --threads 10
     
 > Example of the HTTP attack method
 
