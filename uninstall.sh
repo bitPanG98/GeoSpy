@@ -1,10 +1,5 @@
 #!/bin/bash
 
-RS="\033[1;31m"
-YS="\033[1;33m"
-CE="\033[0m"
-WHS="\033[0m"
-
 printf '\033]2;uninstall.sh\a'
 
 if [[ $EUID -ne 0 ]]
