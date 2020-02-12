@@ -64,7 +64,7 @@ def SYN_ATTACK(threads, attack_time, target):
 			except Exception as e:
 				print(e)
 			else:
-				print("\033[1;32m"+"[+]"+"\033[0m"+" SYN packet sent!")
+				print("\033[1;32m"+"[+]"+"\033[0m"+" SYN payload was sent!")
 
 	# Start threads
 	for thread in range(0, threads):
