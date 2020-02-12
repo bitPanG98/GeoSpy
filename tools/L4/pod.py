@@ -53,7 +53,7 @@ def POD_ATTACK(threads, attack_time, target):
 
 	# Start threads
 	for thread in range(0, threads):
-		print("\033[1;34m"+"[*]"+"\033[0m"+" Staring thread " + str(thread))
+		print("\033[1;34m"+"[*]"+"\033[0m"+" Staring thread " + str(thread) + "...")
 		t = Thread(target = pod_flood)
 		t.start()
 		threads_list.append(t)
