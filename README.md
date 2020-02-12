@@ -58,10 +58,9 @@
 > quack -h
 
 ```
-
 usage: quack [-h] [--target <IP:PORT, URL, PHONE>]
              [--method [SMS|NTP|TCP|UDP|SYN|POD|SLOWLORIS|MEMCACHED|HTTP|NJRAT]]
-             [--time TIME] [--threads THREADS] [-u]
+             [--time <time>] [--threads <threads>] [-u]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -69,11 +68,10 @@ optional arguments:
                         Target IP:port, URL or phone.
   --method [SMS|NTP|TCP|UDP|SYN|POD|SLOWLORIS|MEMCACHED|HTTP|NJRAT]
                         Attack method.
-  --time TIME           Time in secounds.
-  --threads THREADS     Threads count.
+  --time <time>         Time in secounds.
+  --threads <threads>   Threads count.
   -u, --update          Update Quack Toolkit.
-```
-  
+``` 
 ***
   
 # Quack Toolkit examples
