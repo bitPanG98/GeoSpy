@@ -58,17 +58,17 @@
 > quack -h
 
 ```
-usage: quack [-h] [--target <IP:PORT, URL, PHONE>]
+usage: quack [-h] [--target <IP:port/URL/phone>]
              [--method [SMS|NTP|TCP|UDP|SYN|POD|SLOWLORIS|MEMCACHED|HTTP|NJRAT]]
-             [--time <time>] [--threads <threads>] [-u]
+             [--timeout <timeout>] [--threads <threads>] [-u]
 
 optional arguments:
   -h, --help            show this help message and exit
-  --target <IP:port, URL, phone>
+  --target <IP:port/URL/phone>
                         Target IP:port, URL or phone.
   --method [SMS|NTP|TCP|UDP|SYN|POD|SLOWLORIS|MEMCACHED|HTTP|NJRAT]
                         Attack method.
-  --time <time>         Time in secounds.
+  --timeout <timeout>   Timeout in secounds.
   --threads <threads>   Threads count.
   -u, --update          Update Quack Toolkit.
 ``` 
