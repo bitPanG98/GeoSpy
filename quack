@@ -42,7 +42,7 @@ def main():
 	# Get args
 	args = parser.parse_args()
 	threads = args.threads
-	time = args.time
+	time = args.timeout
 	method = str(args.method).upper()
 	target = args.target
 
