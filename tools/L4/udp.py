@@ -70,4 +70,4 @@ def UDP_ATTACK(threads, attack_time, target):
 		FINISH = True
 		thread.join()
 	
-	print("\033[1;33m"+"[!]"+"\033[0m"+" UDP attack stopped!")
+	print("\033[1;33m"+"[!]"+"\033[0m"+" UDP attack stopped.")
