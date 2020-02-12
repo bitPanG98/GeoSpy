@@ -86,7 +86,7 @@ optional arguments:
     
 > Example of the TCP attack method
 
-    quack --method TCP --target 1.1.1.1:8080 --time 10 --threads 10
+    quack --method TCP --target 192.168.1.100:80 --time 10 --threads 10
 
 ***
 
