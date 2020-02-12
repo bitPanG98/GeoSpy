@@ -39,7 +39,7 @@ def HTTP_ATTACK(threads, attack_time, target):
 		if not input("\033[1;33m"+"[!]"+"\033[0m"+" Current site is under CloudFlare protection. \n"+"\033[1m"+"[?]"+"\033[0m"+"Continue? y/N: ") in ("y", "Y", "1"):
 			exit()
 
-	print("\033[1;34m"+"[*]"+"\033[0m"+" Starting attack...")
+	print("\033[1;34m"+"[*]"+"\033[0m"+" Starting HTTP attack...")
 	
 	threads_list = []
 	# Load 25 random user agents
@@ -69,7 +69,7 @@ def HTTP_ATTACK(threads, attack_time, target):
 				print(e)
 				time.sleep(2)
 			else:
-				print("\033[1;32m"+"[+]"+"\033[0m"+" Package was sent! Package size: " + str(len(payload)) + ".")
+				print("\033[1;32m"+"[+]"+"\033[0m"+" HTTP packet was sent! Packet size: " + str(len(payload)) + ".")
 
 
 	# Start threads
