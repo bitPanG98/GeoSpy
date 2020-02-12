@@ -2,6 +2,60 @@
 
 printf '\033]2;Quack Toolkit\a'
 
+if [[ "$1" = "-u" || "$1" = "--update" ]]
+then
+if [[ -d /data/data/com.termux ]]
+then
+if [[ -f /data/data/com.termux/files/usr/bin/quack ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+else
+if [[ -f /usr/local/bin/quack ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+fi
+{
+ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+} &> /dev/null
+if [[ "$ASESR" = "" ]]
+then 
+sleep 1
+echo "[ERROR] Download failed!"
+sleep 1
+exit
+fi
+if [[ $EUID -ne 0 ]]
+then
+sleep 1
+echo "[ERROR] Permission denied!"
+sleep 1
+exit
+fi
+sleep 1
+echo "[BEGIN] Installing update..."
+{
+cd ~
+git clone https://github.com/entynetproject/quack.git
+if [[ "$UPD" != "true" ]]
+then
+sleep 0
+else
+cd ~/quack
+chmod +x install.sh
+./install.sh
+fi
+} &> /dev/null
+echo "[SUCCESS] Successfully updated!"
+sleep 1
+exit
+fi
+
 if [[ -d ~/quack ]]
 then
 cd ~/quack
