@@ -57,7 +57,7 @@ def NJRAT_ATTACK(threads, attack_time, target):
 				sock.connect((target_ip, target_port))
 			except Exception as e:
 				print(e)
-				print("\033[1;33m"+"[!]"+"\033[0m"+" NJRAT client is not connected!")
+				print("\033[1;31m"+"[-]"+"\033[0m"+" Failed to connect to NJRAT client!")
 				exit()
 				
 			try:
@@ -84,4 +84,4 @@ def NJRAT_ATTACK(threads, attack_time, target):
 		FINISH = True
 		thread.join()
 	
-	print("\033[1;33m"+"[!]"+"\033[0m"+" NJRAT attack stopped!")
+	print("\033[1;33m"+"[!]"+"\033[0m"+" NJRAT attack stopped.")
