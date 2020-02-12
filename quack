@@ -29,13 +29,13 @@ def main():
 
 	# Parse args
 	parser = argparse.ArgumentParser()
-	parser.add_argument("--target", type = str, metavar = "IP:port, URL, phone",
+	parser.add_argument("--target", type = str, metavar = "<IP:port/URL/phone>",
 					help = "Target IP:port, URL or phone.")
-	parser.add_argument("--method", type = str, metavar = "SMS|NTP|TCP|UDP|SYN|POD|SLOWLORIS|MEMCACHED|HTTP|NJRAT",
+	parser.add_argument("--method", type = str, metavar = "[SMS|NTP|TCP|UDP|SYN|POD|SLOWLORIS|MEMCACHED|HTTP|NJRAT]",
 					help = "Attack method.")
-	parser.add_argument("--timeout", type = int, default = 10, metavar = "TIMEOUT",
+	parser.add_argument("--timeout", type = int, default = 10, metavar = "<timeout>",
 					help = 'Timeout in secounds.')
-	parser.add_argument("--threads", type = int, default = 3, metavar = "THREADS",
+	parser.add_argument("--threads", type = int, default = 3, metavar = "<threads>",
 					help = "Threads count.")
 	parser.add_argument("-u", "--update", action='store_true', dest="update", help = "Update Quack Toolkit.")
 	
