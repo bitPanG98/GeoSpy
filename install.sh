@@ -20,7 +20,7 @@ printf '\033]2;install.sh\a'
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e ""$RS"[-] "$WHS"This script must be run as root!"$CE"" 1>&2
+   echo -e "[ERROR] "$WHS"This script must be run as root!" 1>&2
    sleep 1
    exit
 fi
@@ -53,7 +53,7 @@ echo -e """
 echo
 
 sleep 1
-echo -e ""$BS"[*]"$WHS" Installing dependencies..."$CE""
+echo -e "[BEGIN] Installing dependencies..."
 sleep 1
 
 {
@@ -108,5 +108,5 @@ chmod +x /data/data/com.termux/files/usr/bin/quack
 } &> /dev/null
 
 sleep 1
-echo ""$GNS"[+]"$WHS" Successfully installed!"$CE""
+echo "[SUCCESS] Successfully installed!"
 sleep 1
