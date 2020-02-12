@@ -57,7 +57,7 @@ sleep 0.5
 clear
 sleep 0.5
 echo  
-cd ~/phonia
+cd ~/quack
 cat banner/banner.txt
 echo
 
