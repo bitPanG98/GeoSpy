@@ -22,8 +22,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-printf '\033]2;install.sh\a'
-
 N="\033[1;37m"
 C="\033[0m"
 
@@ -36,10 +34,12 @@ GNS="\033[1;32m"
 R="\033[1;31m"
 WS="\033[0m"
 
+printf '\033]2;install.sh\a'
+
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e ""$RS"[-] "$WS"This script must be run as root!"$CE"" 1>&2
+   echo -e ""$RS"[-]"$WS" This script must be run as root!"$CE"" 1>&2
    sleep 1
    exit
 fi
