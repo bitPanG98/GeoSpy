@@ -59,7 +59,7 @@ def MEMCACHED_ATTACK(threads, attack_time, target):
 					except Exception as e:
 						print(e)
 					else:
-						print("\033[1;34m"+"[*]"+"\033[0m"+" Sending " + str(packets) + " forged UDP packets to: " + server + "...")
+						print("\033[1;34m"+"[*]"+"\033[0m"+" Sending " + str(packets) + " forged UDP packets to " + server + "...")
 
 	# Start threads
 	for thread in range(threads):
