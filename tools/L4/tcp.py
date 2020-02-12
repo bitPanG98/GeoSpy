@@ -66,7 +66,7 @@ def TCP_ATTACK(threads, attack_time, target):
 				time.sleep(0.25)
 				continue
 			else:
-				print("\033[1;32m"+"[+]"+"\033[0m"+" TCP random packet sent! Payload size: " + str(len(payload)) + "...")
+				print("\033[1;32m"+"[+]"+"\033[0m"+" TCP payload was sent! Payload size: " + str(len(payload)) + ".")
 
 	# Start threads
 	for thread in range(threads):
