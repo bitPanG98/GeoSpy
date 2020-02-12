@@ -23,8 +23,6 @@
 # SOFTWARE.
 
 import argparse
-import tools.addons.update
-import tools.addons.winpcap
 
 def main():
 
