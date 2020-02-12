@@ -20,7 +20,7 @@ def main():
 					help = 'Time in secounds.')
 	parser.add_argument("--threads", type = int, default = 3, metavar = "<threads>",
 					help = "Threads count.")
-	parser.add_argument("-u", "--update", action='store_true', dest="update", help = "Update Quack Toolkit")
+	parser.add_argument("-u", "--update", action='store_true', dest="update", help = "Update Quack Toolki.t")
 	
 	# Get args
 	args = parser.parse_args()
