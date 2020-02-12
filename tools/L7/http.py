@@ -69,7 +69,7 @@ def HTTP_ATTACK(threads, attack_time, target):
 				print(e)
 				time.sleep(2)
 			else:
-				print("\033[1;32m"+"[+]"+"\033[0m"+" Request sent! Payload size: " + str(len(payload)) + "...")
+				print("\033[1;32m"+"[+]"+"\033[0m"+" Request sent! Payload size: " + str(len(payload)) + ".")
 
 
 	# Start threads
