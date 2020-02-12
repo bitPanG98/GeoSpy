@@ -107,7 +107,7 @@ class Service:
 
         # Create suffixes
         okay  = "Service (" + getDomain(url) + ") >> Message sent!"
-        error = "Service (" + getDomain(url) + ") >> Failed to sent message!"
+        error = "Service (" + getDomain(url) + ") >> Message was not sent."
 
         try:
             # If data type is 'json'
