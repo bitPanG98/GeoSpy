@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
 # MIT License
 #
@@ -22,31 +22,22 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-N="\033[1;37m"
-C="\033[0m"
+import socket
+import requests
+import ipaddress
+from urllib.parse import urlparse
 
-CE="\033[0m"
-RS="\033[1;31m"
-YS="\033[1;33m"
-BS="\033[1;34m"
-GNS="\033[1;32m"
-
-R="\033[1;31m"
-WS="\033[0m"
-
-printf '\033]2;uninstall.sh\a'
-
-if [[ $EUID -ne 0 ]]
-then
-   sleep 1
-   echo -e ""$RS"[-] "$WHS"This script must be run as root!"$CE"" 1>&2
-   sleep 1
-   exit
-fi
-
-{
-rm /bin/quack
-rm /usr/local/bin/quack
-rm -rf ~/quack
-rm /data/data/com.termux/files/usr/bin/quack
-} &> /dev/null
+# Check if site is in cloudflare
+def isCloudFlare(link):
+	parsed_uri = urlparse(link)
+	domain = '{uri.netloc}'.format(uri = parsed_uri)
+	try:
+		origin = socket.gethostbyname(domain)
+		iprange = requests.get('https://www.cloudflare.com/ips-v4').text
+		ipv4 = [row.rstrip() for row in iprange.splitlines()]
+		for i in range(len(ipv4)):
+			if ipaddress.ip_address(origin) in ipaddress.ip_network(ipv4[i]):
+				return True
+	except socket.gaierror:
+		print("\033[1;31m"+[-]+"\033[0m"+"Unable to verify if victim's IP address belong to a CloudFlare\'s subnet!")
+		return False

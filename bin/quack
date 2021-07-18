@@ -34,19 +34,88 @@ GNS="\033[1;32m"
 R="\033[1;31m"
 WS="\033[0m"
 
-printf '\033]2;uninstall.sh\a'
+printf '\033]2;Quack Toolkit\a'
 
+if [[ "$1" = "-u" || "$1" = "--update" ]]
+then
+if [[ -d /data/data/com.termux ]]
+then
+if [[ -f /data/data/com.termux/files/usr/bin/quack ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+else
+if [[ -f /usr/local/bin/quack ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+fi
+{
+ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+} &> /dev/null
+if [[ "$ASESR" = "" ]]
+then 
+sleep 1
+echo -e ""$RS"[-]"$WS" Download failed!"$CE""
+sleep 1
+exit
+fi
 if [[ $EUID -ne 0 ]]
 then
-   sleep 1
-   echo -e ""$RS"[-] "$WHS"This script must be run as root!"$CE"" 1>&2
-   sleep 1
-   exit
+sleep 1
+echo -e ""$RS"[-]"$WS" Permission denied!"$CE""
+sleep 1
+exit
 fi
-
+sleep 1
+echo -e ""$BS"[*]"$WS" Installing update..."$CE""
 {
+rm -rf ~/quack
 rm /bin/quack
 rm /usr/local/bin/quack
-rm -rf ~/quack
 rm /data/data/com.termux/files/usr/bin/quack
+cd ~
+git clone https://github.com/entynetproject/quack.git
+if [[ "$UPD" != "true" ]]
+then
+sleep 0
+else
+cd ~/quack
+chmod +x install.sh
+./install.sh
+fi
 } &> /dev/null
+echo -e ""$GNS"[+]"$WS" Successfully updated!"$CE""
+sleep 1
+exit
+fi
+
+if [[ -d ~/quack ]]
+then
+cd ~/quack
+chmod +x quack
+./quack $1 $2 $3 $4 $5 $6 $7 $8 $9
+else
+{
+ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+} &> /dev/null
+if [[ "$ASESR" != "" ]]
+then 
+cd ~
+{
+git clone https://github.com/entynetproject/quack.git
+cd $OLDPWD
+cd ~/quack
+} &> /dev/null
+chmod +x quack
+./quack $1 $2 $3 $4 $5 $6 $7 $8 $9
+else
+cd ~
+sleep 1
+exit
+fi
+fi

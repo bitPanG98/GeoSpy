@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
 # MIT License
 #
@@ -22,31 +22,21 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-N="\033[1;37m"
-C="\033[0m"
+from phonenumbers import geocoder, parse
 
-CE="\033[0m"
-RS="\033[1;31m"
-YS="\033[1;33m"
-BS="\033[1;34m"
-GNS="\033[1;32m"
+# Make for Russian numbers
+def normalize(phone):
+    if phone[0] == "+":
+        phone = phone[1:]
+    return phone
 
-R="\033[1;31m"
-WS="\033[0m"
+# Make for other services
+def transformPhone(phone, i):
+	# Pizzahut
+	if i == 5:
+		return '+' + phone[0] + ' (' + phone[1:4] + ') ' + phone[4:7] + ' ' + phone[7:9] + ' ' + phone[9:11] # "+7 (915) 350 99 08'
 
-printf '\033]2;uninstall.sh\a'
-
-if [[ $EUID -ne 0 ]]
-then
-   sleep 1
-   echo -e ""$RS"[-] "$WHS"This script must be run as root!"$CE"" 1>&2
-   sleep 1
-   exit
-fi
-
-{
-rm /bin/quack
-rm /usr/local/bin/quack
-rm -rf ~/quack
-rm /data/data/com.termux/files/usr/bin/quack
-} &> /dev/null
+# Get country name by phone
+def getCountry(phone):
+	query = parse("+" + phone, None)
+	return repr(geocoder.description_for_number(query, 'en'))

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
 # MIT License
 #
@@ -22,31 +22,24 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-N="\033[1;37m"
-C="\033[0m"
+import json
+import random
 
-CE="\033[0m"
-RS="\033[1;31m"
-YS="\033[1;33m"
-BS="\033[1;34m"
-GNS="\033[1;32m"
+# Get random IP
+def random_IP():
+    ip = []
+    for _ in range(0, 4):
+        ip.append(str(random.randint(1,255)))
+    return ".".join(ip)
 
-R="\033[1;31m"
-WS="\033[0m"
+# Get random referer
+def random_referer():
+    with open("tools/L7/referers.txt", 'r') as referers:
+    	referers = referers.readlines()
+    return random.choice(referers)
 
-printf '\033]2;uninstall.sh\a'
-
-if [[ $EUID -ne 0 ]]
-then
-   sleep 1
-   echo -e ""$RS"[-] "$WHS"This script must be run as root!"$CE"" 1>&2
-   sleep 1
-   exit
-fi
-
-{
-rm /bin/quack
-rm /usr/local/bin/quack
-rm -rf ~/quack
-rm /data/data/com.termux/files/usr/bin/quack
-} &> /dev/null
+# Get random user agent
+def random_useragent():
+    with open("tools/L7/user_agents.json", 'r') as agents:
+        user_agents = json.load(agents)["agents"]
+    return random.choice(user_agents)
